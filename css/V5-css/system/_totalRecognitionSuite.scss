@@ -1,0 +1,40 @@
+#allWallGrid{
+  .card{
+    text-align: left;
+    margin-bottom: 30px!important;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    .fa.fa-bullhorn{
+      margin-right: 5px;
+    }
+    small{
+      a{
+        margin-right: 5px;
+      }
+    }
+    .giveAHandCommentWrapper{
+      background: $neutral;
+      padding: 30px;
+      span.applaudCount{
+        margin: 0 5px;
+        font-weight: bold;
+      }
+      .giveAHandComments{
+        margin-top: 40px;
+        .commenterName{
+          color: $primary;
+          font-weight: bold;
+          margin-right: 10px;
+        }
+      }
+      .comment{
+        background: $text;
+        color: $white;
+        padding: 1%;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

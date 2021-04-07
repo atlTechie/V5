@@ -1,0 +1,46 @@
+.fas, .fab, .far{
+  color: $secondary;
+}
+
+$icon-lg: 144px;
+$icon-md: 80px;
+$icon-sm: 16px;
+
+.icon-lg{
+  font-size: $icon-lg;
+}
+
+.icon-md{
+  font-size: $icon-md;
+}
+
+.icon-sm{
+  font-size: $icon-sm;
+}
+
+@mixin icon-bg-size($size: 150px){
+  width: $size;
+  height: $size;
+}
+
+.icon-bg, .icon-cir-bg, .icon-sq-bg{
+  $icon-bg: $secondary;
+  background: $icon-bg;
+  @include icon-bg-size(150px);
+  font-size: $icon-md;
+  @include flex(column, center, center);
+  padding: 5%;
+  @if lightness($icon-bg) > 50{
+    color: $text;
+  }@else{
+    color: $white;
+  }
+}
+
+.icon-sq-bg{
+
+}
+
+.icon-cir-bg{
+  border-radius: 100%;
+}

@@ -1,0 +1,30 @@
+.callout-wrapper-4-col {
+  @include flex(row, space-between, center, $wrap: nowrap, $percent: 24%);
+  flex: 1;
+  .callout {
+    background: $white;
+    text-align: center;
+    padding: 30px;
+  }
+  @media (max-width: 576px) {
+    @include flex(column, center, center, wrap, 100%);
+    .callout {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (min-width: 576px) and (max-width: 992px) {
+    @include flex(row, center, center, wrap, 46%);
+    .callout {
+      margin-bottom: 30px;
+      margin: 15px;
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1024px) {
+    @include flex(row, center, center, wrap, 40%);
+    .callout {
+      margin-bottom: 30px;
+      margin: 15px;
+    }
+  }
+}

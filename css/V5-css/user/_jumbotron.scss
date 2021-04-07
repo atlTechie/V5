@@ -1,0 +1,33 @@
+.jumbotron{
+  margin-bottom: 0;
+  min-height: 480px;
+  @include flex(column, center, center, $wrap: nowrap, $percent: 100%);
+  color: $white;
+  @media (min-width: 576px) and (max-width: 992px){
+    min-height: 100%;
+  }
+}
+
+#welcomeWrapper{
+  #welcomeShoppingSections{
+  @include flex(row, center, center, $wrap: nowrap, $percent: 100%);
+    flex: 1;
+    .btn.btn-primary{
+      margin-right: 10px;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+    @media (max-width: 576px){
+      flex-wrap: wrap;
+      .btn.btn-primary{
+        flex: 100%;
+        margin-bottom: 10px;
+        justify-content: center;
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

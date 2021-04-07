@@ -1,0 +1,14 @@
+table,
+.shoppingCart_table {
+  text-align: left;
+  color: $text !important;
+  background: $white;
+  thead {
+    background: $secondary;
+    @if lightness($secondary) > 35 {
+      color: $white;
+    } @else {
+      color: $text;
+    }
+  }
+}

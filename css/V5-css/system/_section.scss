@@ -1,0 +1,138 @@
+@mixin section($color, $pad-l, $pad-r, $pad-t, $pad-b){
+  @include base-padding($pad-l, $pad-r, $pad-t, $pad-b);
+  background: $color;
+  @include color-contrast($color);
+}
+
+section#welcomeAnnouncement{
+  @include section(lighten($neutral, 25%), 125px, 125px, 0, 0);
+  .icon-cir-bg{
+    margin: 0 auto 30px auto;
+  }
+}
+
+section#program-stats{
+  $bg-color: $neutral;
+  $pad-and-marg: 60px;
+  $header-bg: $secondary;
+  #home-page-wish-list, #home-page-goal-tracking{
+    @if lightness($bg-color) > 75 {
+      color: $text;
+      a{
+        color: $accent;
+      }
+    }@else{
+      color: $white;
+      a{
+        color: $white;
+      }
+    }
+    h3{
+      text-align: center;
+    }
+    .media-image{
+      margin-left: 30px;
+      background: $white;
+      width: 70px;
+      height: 70px;
+      border: 2px solid $secondary;
+      padding: 5px;
+      img{
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        min-height: 100%;
+      }
+    }
+    table{
+      @include color-contrast($bg-color);
+      background: $white;
+      border: none;
+      thead{
+        background: $header-bg;
+        @include color-contrast($header-bg);
+      }
+    }
+    @media (min-width: 576px) and (max-width: 768px){
+      .home-page-widget-wrapper{
+        flex: 0 0 100%!important;
+        max-width: 100%!important;
+        display: block;
+      }
+      .offest-md-3{
+        margin-left: 0!important;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 1024px){
+      max-width: 100%;
+      flex: 100%;
+      display: block;
+    }
+
+  }
+  #home-page-goal-tracking{
+    h1{margin-bottom: $pad-and-marg}
+    background: $bg-color;
+    @include base-padding($pad-and-marg, $pad-and-marg, $pad-and-marg, $pad-and-marg);
+    @include color-contrast($bg-color);
+    #goal-tracking{
+      margin-top: -15%;
+    }
+  }
+  #home-page-wish-list{
+    background: darken($bg-color, 15%);
+    @include base-padding($pad-and-marg, $pad-and-marg, $pad-and-marg, $pad-and-marg);
+    @include color-contrast(darken($bg-color, 25%));
+  }
+}
+
+section#programCTAs, section#home-page-leaderboard{
+  @include base-padding(125px, 125px);
+  .parallax-window{
+    z-index: -1;
+    min-height: 400px;
+  }
+  .ldr-brd{
+    background: transparentize($white, .75);
+    thead{
+      background: $secondary;
+      @include color-contrast($secondary);
+    }
+    tr{
+      &:hover{
+        $table-hover: lighten($accent, 15%);
+        background: $table-hover;
+        @if lightness($table-hover) > 50 {
+          color: $text;
+        }@else{
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+section#home-page-leaderboard{
+  .card{
+    border-radius: 0;
+    border: 0;
+    .fas, .fab, .far{
+      margin-left: 0;
+      margin-right: 10px;
+    }
+    .card-header{
+      $card-bg: lighten($primary, 25%);
+      background: $card-bg;
+      border-radius: 0;
+      @include color-contrast($card-bg);
+      h4{
+        margin-bottom: 0;
+      }
+    }
+
+    .avatar{
+      @include avatar(175px);
+      border: 5px solid $primary;
+    }
+  }
+}

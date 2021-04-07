@@ -1,0 +1,11 @@
+form{
+  .form-control{
+    &:focus{
+      box-shadow: 0 0 0 .2rem transparentize($accent, .5);
+      border-color: $accent;
+    }
+    &::placeholder{
+      font-weight: $body-font-weight;
+    }
+  }
+}

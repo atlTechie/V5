@@ -1,0 +1,20 @@
+.avatar, .giveAHandCommenterAvatar{
+  border: 1px solid $secondary;
+  width: 175px;
+  height: 175px;
+  margin: 0 auto 30px auto;
+  border-radius: 100%;
+  display: inline-block;
+  overflow: hidden;
+  img{
+    width: 100%;
+    min-height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+}
+
+.giveAHandCommenterAvatar{
+  width: 75px;
+  height: 75px;
+}

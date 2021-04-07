@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+	
+    <link rel="stylesheet" href="style.css">
+
+    <title>Welcome | RewardTrax - V5</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+        <div class="container">
+            <div id="shoppingNavigation" class="row">
+                <div style="padding-left: 0;" class="col-xs-12 col-md-2">
+                    <div class="dropdown">
+                        <button id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-primary dropdown-toggle w-100">Departments</button>
+                        <div aria-labelledby="dropdownMenuButton" class="dropdown-menu"><a href="#" class="dropdown-item">Action</a><a href="#" class="dropdown-item">Another action</a><a href="#" class="dropdown-item">Something else here</a></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-8">
+                    <div class="input-group w-100">
+                        <div class="input-group-prepend"><span class="departmentSelect"><a href="#" class="btn btn-primary">All<span class="fa fa-caret-down"></span></a>
+                            </span>
+                        </div>
+                        <input type="text" aria-label="Amount (to the nearest dollar)" class="form-control">
+                        <div class="input-group-append"><span><a href="#" class="btn btn-primary"><span class="fa fa-search"></span></a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding:0;" class="col-xs-12 col-md-2">
+                    <div class="col-md-12">
+                        <div class="d-flex flex-row justify-content-between">
+                            <a href="shoppingcart.html" class="text-center">
+                                <div class="fa fa-shopping-cart fa-2x"></div><br><small style="font-size:12px;">Cart</small></a>
+                            <a href="orderReceipt.html" class="text-center">
+                                <div class="fas fa-file fa-2x"></div><br><small style="font-size:12px;">Orders</small></a>
+                            <a href="wishlist.html" class="text-center">
+                                <div class="fa fa-star fa-2x"></div><br><small style="font-size:12px;">Wish List</small></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="col-xs-12 col-md-6 offset-md-3 text-center">
+                <div id="pageIntro" class="my-5">
+                    <h2><span class="fa fa-shopping-bag"></span> Your Shopping Cart</h2>
+                    <p>Items in your shopping cart expire and will be removed after 30 days. Points and availability subject to change.</p>
+                </div>
+            </div>
+            <div class="row">
+                <table class="table table-borderless shoppingCart_table">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="shoppingCart_itemDetailColumn">Item</th>
+                            <th scope="col" class="shoppingCart_quantityColumn">Quantity</th>
+                            <th scope="col" class="shoppingCart_pointsColumn">Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">
+                                <div class="shoppingCart_itemInfo d-flex flex-row justify-content-start">
+                                    <div class="shoppingCart_imageWrapper">
+                                        <a href="itemDetail.html"><img src="http://images.booksamillion.com/covers/dvd/8/83/929/103/883929103409_l_2681592.gif" class="img-fluid"></a>
+                                    </div>
+                                    <div class="shoppingCart_itemDescription">
+                                        <a href="itemDetail.html">
+                                            <h3 class="shoppingCart_itemTitle">The Book of Eli</h3>
+                                        </a>
+                                        <p class="shoppingCart_itemSubInfo">Denzel Washington</p>
+                                        <p class="shoppingCart_itemSubInfo">DVD</p>
+                                        <p class="shoppingCart_itemSubInfo"> <span class="fa fa-shopping-bag"></span><span> In-Store Pick Up</span></p><small>Choose your store during checkout.  </small>
+                                    </div>
+                                </div>
+                            </th>
+                            <td>
+                                <select id="inputGroupSelect01" class="custom-select w-50 d-block mb-3">
+                    <option selected=""></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                                <div class="shoppingCartLinks"><a href="shoppingCart_empty.html" class="d-block mb-2">Remove <span class="fa fa-times-circle"></span></a><a href="wishlist.html" class="d-block">Move to Wish List <span class="fa fa-heart"></span></a></div>
+                            </td>
+                            <td>
+                                <div class="shoppingCart_salePrice">1,024</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row">
+                <hr class="w-100">
+                <div class="col-xs-12 col-md-8 shoppingCartLinks_continueShopping"><a href="shopping.html" class="shoppingCartLinks"><span class="fa fa-arrow-circle-left"></span> Continue Shopping</a></div>
+                <div class="col-xs-12 col-md-4 shoppingCart_orderBox w-100">
+                    <div class="shoppingCart_totalBox">
+                        <div class="row">
+                            <div class="d-flex flex-row justify-content-between"></div>
+                            <div class="w-50">
+                                <p class="shoppingCart_orderTotal">Order Total<span>(in points)</span></p>
+                                <p class="shoppingCart_remainingPoints">Remaining Points</p>
+                            </div>
+                            <div class="w-50 text-right">
+                                <h3 class="shoppingCart_pointsRequired">1,024</h3>
+                                <p class="shoppingCart_pointsRemaining">63,476</p>
+                            </div>
+                        </div>
+                        <div class="row"><a href="checkout_inStorePickup.html" class="btn btn-primary w-100 mb-0">Checkout Now <span class="fa fa-check-circle"></span></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+	<!-- Optional JavaScript-->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+   
+    <script src="./js/bootstrap.min.js"></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js'></script>
+    <!-- Backstretch Script for Large Image Backgrounds  -->
+    <script src='./js/jquery.backstretch.js'></script>
+    <script src='./js/responsive-backgrounds.js'></script>
+    <!-- Circle Gauge Script -->
+    <script src='./js/jquery.circliful.min.js'></script>
+    <script src='./js/goal-tracking.js'></script>
+    <!-- Basic Theme Scripts -->
+    <script src='./js/program-specific-scripts.js'></script>
+	<script src="./js/RewardTraxCustom.js">
+    </script>
+</body>
+
+</html>

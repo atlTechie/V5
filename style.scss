@@ -1,0 +1,23 @@
+@import "css/V5-css/_variables.scss";
+@import "css/V5-css/_global-mixins.scss";
+@import "css/V5-css/system/_button.scss";
+
+@import "css/V5-css/system/_header-navigation.scss";
+@import "css/V5-css/system/_footer-navigation.scss";
+@import "css/V5-css/system/_forms.scss";
+@import "css/V5-css/system/_grids.scss";
+@import "css/V5-css/system/_main.scss";
+@import "css/V5-css/system/_section.scss";
+@import "css/V5-css/system/_shopping.scss";
+@import "css/V5-css/system/_tables.scss";
+@import "css/V5-css/system/_totalRecognitionSuite.scss";
+@import "css/V5-css/system/_typography.scss";
+
+#imageRotator {
+  img {
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}

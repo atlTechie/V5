@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Events - Sports | RewardTrax - V5</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="container">
+        <div id="shoppingNavigation" class="row">
+          <div style="padding-left: 0;" class="col-xs-12 col-md-2">
+            <div class="dropdown w-100">
+              <button type="button" data-toggle="dropdown" class="dropbtn btn btn-primary dropdown-toggle">Departments</button>
+              <div class="dropdown-content">
+                <div class="row">
+                  <div class="col-xs-12 col-md-3">
+                    <div class="d-flex flex-column nav nav-tabs"><a data-toggle="tab" href="shopping.html">
+                        <div class="fa fa-home"></div>Home</a><a data-toggle="tab" href="#shopping">
+                        <div class="fa fa-tags"></div>Shopping</a><a data-toggle="tab" href="#events">
+                        <div class="fa fa-ticket"></div>Events</a><a data-toggle="tab" href="#travel">
+                        <div class="fa fa-plane"></div>Travel</a>
+                      <hr class="w-100"><a data-toggle="tab" href="#sale">
+                        <div class="fa fa-certificate"></div>On Sale!</a>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-3 tab-content">
+                    <div id="shopping" style="max-height: 200px; overflow: scroll;" class="tab-pane fade">
+                      <div class="nav nav-tabs d-flex flex-column">
+                        <div class="nav nav-tabs d-flex flex-column"><a href="#appleStore" data-toggle="tab">Apple Store<span class="badge fa fa-caret-right"></span></a></div>
+                        <div class="nav nav-tabs d-flex flex-column"><a href="#baby" data-toggle="tab">Baby</a></div>
+                        <div class="nav nav-tabs d-flex flex-column"><a href="#books" data-toggle="tab">Books</a></div><a href="#">Electronics</a><a href="#">Fashion Accessories</a><a href="#">Gift Baskets</a><a href="#">Home & Garden</a><a href="#">Jewelry</a><a href="#">Movies</a><a href="#">Music</a><a href="#">Office Products</a><a href="#">On Sale Now!</a>
+                      </div>
+                    </div>
+                    <div id="events" class="d-flex flex-column tab-pane fade"><a href="#">Link 1</a><a href="#">Link 2</a><a href="#">Link 3</a></div>
+                    <div id="travel" class="d-flex flex-column tab-pane fade"><a href="#">Link A</a><a href="#">Link B</a><a href="#">Link C</a></div>
+                  </div>
+                  <div class="col-xs-12 col-md-3 tab-content">
+                    <div id="appleStore" class="tab-pane fade">
+                      <div class="d-flex flex-column"><a href="#">iPods</a><a href="#">iPod Accessories</a><a href="#">Watches</a><a href="#">Mac Systems</a><a href="#">iPads</a><a href="#">Shop All Apple Store</a></div>
+                    </div>
+                    <div id="baby" class="tab-pane fade">
+                      <div class="d-flex flex-column"><a href="#">Clothing</a><a href="#">Feeding</a><a href="#">Gear</a><a href="#">Maternity</a><a href="#">Nursery</a><a href="#">Care & Safety</a><a href="#">Shop All Baby</a></div>
+                    </div>
+                    <div id="books" class="tab-pane fade">
+                      <div class="d-flex flex-column"><a href="#">Autobiography & Biography</a><a href="#">Cooking</a><a href="#">Health & Fitness</a><a href="#">History</a><a href="#">Humor</a><a href="#">Juvenile NonFiction</a><a href="#">Juvenile Fiction</a><a href="#">Religion</a><a href="#">Social Science</a><a href="#">Sports & Recreation</a><a href="#">Shop All Books</a></div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-3 hideOnPhone">
+                    <div class="d-flex justify-content-end align-content-end">
+                      <div class="repImageWrapper"><img src="http://appsimulator.net/img/apple-watch-and-iphone-6.png"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-10">
+            <div class="input-group w-100 mb-3">
+              <div class="input-group-prepend"><span class="departmentSelect"><a href="#" class="btn btn-primary">All<span class="fa fa-caret-down"></span></a></span></div>
+              <input type="text" aria-label="Amount (to the nearest dollar)" class="form-control">
+              <div class="input-group-append"><span><a href="#" class="btn btn-primary"><span class="fa fa-search"></span></a></span></div>
+            </div>
+          </div>
+        </div>
+        <div id="shopDepartmentButtons" class="row d-flex flex-row justify-content-between mb-5"><a href="shopping.html" class="btn btn-primary">Shopping<span class="fas fa-tags"></span></a><a href="events.html" class="btn btn-primary">Events<span class="fas fa-ticket-alt"></span></a><a href="http://www.rewardtrax.com/brandeddemo15/Travel.aspx" target="_blank" class="btn btn-primary">Travel<span class="fas fa-plane"></span></a></div>
+        <div class="row">
+          <div id='search-utility' class="col-xs-12 col-md-3">
+            <h3>Search Events </h3>
+            <hr class="w-100 mt-0">
+            <form class="form-inline mb-2 my-lg-0 eventSearchForm">
+              <div class="input-group mb-3">
+                <input type="search" placeholder="Search" aria-label="Search" class="form-control mr-sm-2">
+                <button type="submit" class="btn btn-primary my-2 my-sm-0"><span class="fa fa-search"></span></button>
+              </div>
+              <select id="inputGroupSelect01" class="custom-select mb-3">
+                <option selected="">Any State...</option>
+                <option value="1">Alabama</option>
+                <option value="2">Alaska</option>
+                <option value="3">Alberta</option>
+                <option value="4">Arizona</option>
+                <option value="5">Etc...</option>
+              </select>
+              <div class="mb-3">
+                <div class="form-group row text-left">
+                  <div class="col-xs-12 col-md-3 text-left">
+                    <label for="From"> <span class="fa fa-calendar"> </span> From</label>
+                  </div>
+                  <div class="col-xs-12 col-md-8 offset-md-1">
+                    <input id="inputFromDate" type="email" class="form-control w-100">
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <div class="form-group row text-left">
+                  <div class="col-xs-12 col-md-3 text-left">
+                    <label for="To"> <span class="fa fa-calendar"> </span> To</label>
+                  </div>
+                  <div class="col-xs-12 col-md-8 offset-md-1">
+                    <input id="inputFromDate" type="email" class="form-control w-100">
+                  </div>
+                </div>
+              </div>
+
+
+              <select id="inputGroupSelect01" class="custom-select mb-5">
+                <option selected="">Any Category</option>
+                <option value="1">Sports</option>
+                <option value="2">Concerts</option>
+                <option value="3">Theater</option>
+                <option value="4">Other</option>
+              </select>
+              <h3>Event Categories</h3>
+              <hr class="w-100 mt-0">
+              <ul class="w-100 eventCategoryList">
+                <li> <a href="events_sports.html"><span class="fas fa-football-ball"></span>Sports</a></li>
+                <li> <a href="events_concert.html"><span class="fas fa-music"></span>Concerts</a></li>
+                <li> <a href="events_theater.html"><span class="fas fa-theater-masks"></span>Theater</a></li>
+                <li> <a href="events_other.html"><span class="fas fa-ticket-alt"></span>Other</a></li>
+              </ul>
+            </form>
+          </div>
+          <div class="col-xs-12 col-md-9">
+            <div class="row">
+              <h2>Purchasing Tickets for '<span class="eventName">Utah Jazz Summer League - 3 Day Pass</span><span>'</span></h2>
+            </div>
+            <div class="row">
+              <div class="col-md-12 text-center p-2 mb-3 purchaseConfirmationMessage">
+                <p>Event tickets can<span><strong>not</strong></span><span>be placed in your Shopping Cart or your Wish List. If you wish to order these tickets, you must acknowledge the following:</span></p>
+                <ul>
+                  <li><strong>You must order them now to ensure availability.</strong></li>
+                  <li><strong>Event ticket orders are non-refundable for any reason.</strong></li>
+                </ul>
+              </div>
+            </div>
+            <div class="row eventOrderDetails">
+              <div class="col-xs-12 col-md-6">
+                <div class="row d-flex flex-column mb-3">
+                  <p><strong>Date:</strong></p>
+                  <p class="eventDateTime">Friday 06/20/2018 7:00 PM</p>
+                </div>
+                <div class="row d-flex flex-column mb-3">
+                  <p><strong>Venue:</strong><br></p>
+                  <p class="eventVenue">Minskoff Theatre</p>
+                </div>
+                <div class="row d-flex flex-column mb-3">
+                  <p><strong>Section:</strong><br></p>
+                  <p class="eventVenueSection">Zone E</p>
+                </div>
+                <div class="row d-flex flex-column mb-3">
+                  <p><strong>Row:</strong><br></p>
+                  <p class="eventVenueRow">N/A</p>
+                </div>
+                <div class="row d-flex flex-column">
+                  <p><strong>Ticket Notes:</strong><br></p>
+                  <p class="eventTicketNotes">Mezzanine, Rows J-H. Tickets will be available for delivery by June 15, 2018.</p>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-6">
+                <div class="row d-flex flex-column mb-3">
+                  <p><strong>First Ticket:</strong></p>
+                  <p class="eventFirstTicketPrice">41,854 Points</p>
+                </div>
+                <div class="row d-flex flex-column mb-3">
+                  <p><strong>Additional Tickets (Per Ticket):</strong><br></p>
+                  <p class="eventAdditionalTickets">35,676 Points</p>
+                </div>
+                <div class="row d-flex justify-content-start flex-column mb-3">
+                  <p class="d-block"><strong>Quantity Available<span class="requiredField">*</span><span>:</span></strong></p>
+                  <div class="d-flex flex-row justify-content-start align-items-center">
+                    <form class="d-block">
+                      <div class="form-group">
+                        <select style="width: 75px; margin-right: 10px" class="custom-select form-control">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                        </select>
+                      </div>
+                    </form><a href="#" class="updateOrderLink">Update Order<span class="fa fa-refresh"></span></a>
+                  </div>
+                </div>
+                <div class="row d-flex flex-column mb-3">
+                  <p><span class="requiredField">*</span><span>Some tickets are available in singles and some tickets only come in blocks of two or more. Available quantities and groupings are shown above.</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-5">
+              <div class="col-12">
+                <h4>Order Shipping Address</h4>
+                <hr class="w-100 mt-0">
+                <p><strong>NOTICE:</strong><span>Changing the address here may affect sales tax and can change the points required to redeem items in your cart. Your shipping address can also affect the availability of some items.</span></p>
+                <form class="mb-3">
+                  <div class="form-group">
+                    <label for="receipient">Recipient</label>
+                    <input id="checkout_inputRecipient" type="text" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input id="checkout_inputPhoneNumber" type="text" class="form-control w-50">
+                  </div>
+                  <div class="form-group">
+                    <label for="country">Country</label>
+                    <input id="checkout_inputCountry" type="text" placeholder="USA" class="form-control w-25">
+                  </div>
+                  <div class="form-group">
+                    <label for="streetAddress">Street Address</label>
+                    <input id="checkout_inputStreetAddress" type="text" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="address2">Address 2</label>
+                    <input id="checkout_inputAddress2" type="text" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="city">City</label>
+                    <input id="checkout_inputCity" type="text" class="form-control w-50">
+                  </div>
+                  <div class="form-group">
+                    <label for="state">State</label>
+                    <input id="checkout_inputState" type="text" style="width: 10%;" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="zipCode">Zip Code</label>
+                    <input id="checkout_inputZipCode" type="text" class="form-control w-25">
+                  </div>
+                  <div class="form-group form-check">
+                    <input id="exampleCheck1" type="checkbox" class="form-check-input">
+                    <label for="exampleCheck1" class="form-check-label">Update Profile</label>
+                  </div>
+                </form>
+                <h4>Purchasing Information</h4>
+                <hr class="w-100">
+                <div class="row">
+                  <div class="col-xs-12 col-md-6">
+                    <p> The points required to purchase your items will be deducted from your account balance.</p>
+                    <p><strong>Here's how our order processing works:</strong></p>
+                    <ul class="checkoutProcess">
+                      <li>First, we convert your points to a currency equivalent. For example, we may convert your points into a US dollar ($) equivalent.</li>
+                      <li>Next, using a background program account for currency transactions, we make the purchase of your item from a supplier on your behalf, for instance in dollars.</li>
+                      <li>Then, we subtract the corresponding number of points from your point account. The items are shipped to you directly from the supplier.</li>
+                    </ul>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <div class="shoppingCart_totalBox mb-3">
+                      <div class="row">
+                        <div class="d-flex flex-row justify-content-between"></div>
+                        <div class="w-75">
+                          <p class="checkout_orderTotal"><span class="fa fa-university"></span> Account balance<strong>before</strong><span>purchase:</span></p>
+                          <p class="checkout_remainingPoints"><span class="fa fa-credit-card"></span> Points required for purchase:</p>
+                          <p class="checkout_accountBalanceAfter"><span class="fa fa-money"></span> Account Balance<strong>after</strong><span>purchase:</span></p>
+                          <p class="checkout_totalSavings"><span class="fa fa-bolt"></span><strong> Total Savings</strong><span>on order:</span></p>
+                        </div>
+                        <div class="w-25 text-right">
+                          <p class="checkout_accountBalanceBefore">64,500</p>
+                          <h3 class="checkout_pointsRequired">1,024</h3>
+                          <p class="checkout_accountBalanceAfter">63,476</p>
+                          <p class="checkout_totalSavingsAmount">3,000</p>
+                        </div>
+                      </div>
+                      <div class="row"><a href="events_sports_purchaseConfirmation.html" class="btn btn-primary w-100 mb-0">Continue Checkout<span class="fa fa-check-circle"></span></a></div>
+                    </div>
+                    <div class="text-center w-100"><a href="shopping.html" class="shoppingCartLinks"><span class="fa fa-arrow-circle-left"></span> Continue Shopping</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+	<!-- Optional JavaScript-->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+    <script src="./js/bootstrap.min.js"></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js'></script>
+    <!-- Backstretch Script for Large Image Backgrounds  -->
+    <script src='./js/jquery.backstretch.js'></script>
+    <script src='./js/responsive-backgrounds.js'></script>
+    <!-- Circle Gauge Script -->
+    <script src='./js/jquery.circliful.min.js'></script>
+    <script src='./js/goal-tracking.js'></script>
+    <!-- Basic Theme Scripts -->
+    <script src='./js/program-specific-scripts.js'></script>
+	<script src="./js/RewardTraxCustom.js">
+    </script>
+
+
+  </body>
+</html>

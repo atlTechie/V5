@@ -1,0 +1,22 @@
+$body-font: 'Open Sans', Arial, sans-serif;
+$heading-font: 'Permanent Marker', Georgia, serif;
+
+%body-font{
+  font: {
+    family: $body-font;
+    line-height: $body-line-height;
+    weight: $body-font-weight;
+    size: $body-font-size;
+  }
+  a{
+    color: $accent;
+    &:hover, &:focus{
+      color: darken($accent, 25%)!important;
+    }
+
+  }
+}
+
+body, main, section{
+  @extend %body-font;
+}

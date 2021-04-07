@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Confirmation| V5</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-top">
+        <div class="container">
+            <div id="userInfo" class="navbar-brand">
+                <div class="fa fa-user-circle"></div> Hi Demo, you currently have<span class="headerPoints">64,500</span> points!
+            </div>
+            <button type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"></button><span></span>
+            <div id="navbarNav" class="collapse navbar-collapse"></div>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="myaccount.html" class="nav-link">My Account</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container"><a href="login.html" class="navbar-brand">NewV5</a>
+            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="fa fa-bars"></span></button>
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="welcome.html" class="nav-link">Welcome<span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item"><a href="profile.html" class="nav-link">Profile</a></li>
+                    <li class="nav-item"><a href="quickPoints.html" class="nav-link">QuickPoints</a></li>
+                    <li class="nav-item"><a href="learning.html" class="nav-link">Learning</a></li>
+                    <li class="nav-item"><a href="shopping.html" class="nav-link">Shopping</a></li>
+                    <li class="nav-item"><a href="performanceTracking.html" class="nav-link">Performance Tracking</a></li>
+                    <li class="nav-item"><a href="submitAsale.html" class="nav-link">Submit A Sale</a></li>
+                    <li class="nav-item"><a href="totalrecognitionsuite.html" class="nav-link">Total Recognition Suite</a></li>
+                    <li class="nav-item"><a href="leaderboard.html" class="nav-link">Leaderboard</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div id="shoppingNavigation" class="row">
+                <div style="padding-left: 0;" class="col-xs-12 col-md-2">
+                    <div class="dropdown">
+                        <button id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-primary dropdown-toggle w-100">Departments</button>
+                        <div aria-labelledby="dropdownMenuButton" class="dropdown-menu"><a href="#" class="dropdown-item">Action</a><a href="#" class="dropdown-item">Another action</a><a href="#" class="dropdown-item">Something else here</a></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-8">
+                    <div class="input-group w-100">
+                        <div class="input-group-prepend"><span class="departmentSelect"><a href="#" class="btn btn-primary">All<span class="fa fa-caret-down"></span></a>
+                            </span>
+                        </div>
+                        <input type="text" aria-label="Amount (to the nearest dollar)" class="form-control">
+                        <div class="input-group-append"><span><a href="#" class="btn btn-primary"><span class="fa fa-search"></span></a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding:0;" class="col-xs-12 col-md-2">
+                    <div class="col-md-12">
+                        <div class="d-flex flex-row justify-content-between">
+                            <a href="shoppingcart.html" class="text-center">
+                                <div class="fa fa-shopping-cart fa-2x"></div><br><small style="font-size:12px;">Cart</small></a>
+                            <a href="orderReceipt.html" class="text-center">
+                                <div class="fas fa-file fa-2x"></div><br><small style="font-size:12px;">Orders</small></a>
+                            <a href="wishlist.html" class="text-center">
+                                <div class="fa fa-star fa-2x"></div><br><small style="font-size:12px;">Wish List</small></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="col-xs-12 col-md-6 offset-md-3 text-center">
+                <div id="pageIntro" class="my-5">
+                    <h2><span class="fa fa-shopping-bag"></span> Order Confirmation</h2>
+                    <p>Before we can begin processing your order, you must confirm it.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 text-center p-2 mb-3 purchaseConfirmationMessage">
+                    <form class="confirmationMessage">
+                        <div class="form-group form-check">
+                            <input id="rt_orderConfirmationCheck" type="checkbox" required="required" class="form-check-input">
+                            <label for="exampleCheck1" class="form-check-label">Click the check box to confirm your order and agree to the return policy.</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <table class="table table-borderless shoppingCart_table">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="purchaseConfirmation_itemDetailColumn">Item</th>
+                            <th scope="col" class="purchaseConfirmation_delivery">Delivery</th>
+                            <th scope="col" class="purchaseConfirmation_quantityColumn">Quantity</th>
+                            <th scope="col" class="purchaseConfirmation_pointsColumn">Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">
+                                <div class="shoppingCart_itemInfo d-flex flex-row justify-content-start">
+                                    <div class="shoppingCart_imageWrapper">
+                                        <a href="itemDetail.html"><img src="http://images.booksamillion.com/covers/dvd/8/83/929/103/883929103409_l_2681592.gif" class="img-fluid"></a>
+                                    </div>
+                                    <div class="shoppingCart_itemDescription">
+                                        <a href="itemDetail.html">
+                                            <h3 class="shoppingCart_itemTitle">The Book of Eli</h3>
+                                        </a>
+                                        <p class="shoppingCart_itemSubInfo">Denzel Washington</p>
+                                        <p class="shoppingCart_itemSubInfo">DVD</p>
+                                    </div>
+                                </div>
+                            </th>
+                            <td>
+                                <p class="deliveryMethod mb-0"><span class="fa fa-shopping-bag"></span><span> In-Store Pick Up</span></p>
+                                <div class="d-none">
+                                    <p class="purchaseConfirmation_inStorePickup storeRequired mb-0"><span class="fa fa-exclamation-triangle"></span><span> Store Required</span></p>
+                                </div>
+                                <p class="purchaseConfirmation_inStorePickup selectedStore mb-0">Alpharetta, GA </p>
+                                <p class="purchaseConfirmation_inStorePickup selectStore"><a href="#" data-target="#storeListing" data-toggle="modal"><span class="fa fa-map-marker"></span> Change Store</a></p>
+                                <div id="storeListing" role="dialog" class="modal fade">
+                                    <div style="max-width: 66.66%!important; margin: 0 auto;" class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header d-flex flex-column">
+                                                <h4 class="text-center mx-auto modal-title"><span class="fa fa-map-marker"></span> Check Store Availability</h4>
+                                                <div class="container">
+                                                    <div class="purchaseConfirmationMessage p-2 my-2">
+                                                        <div style="color: #747575;" class="fa fa-exclamation-triangle fa-2x mx-auto text-center my-2"></div>
+                                                        <p class="mb-0">For in-store items, an email will be sent to you when these items are ready to be picked up. Please,<strong>do not</strong> go to the store until you have received the email. Thank you.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-xs-12 col-md-6">
+                                                            <p>Enter your Zip Code to see where you can pick up this item.
+                                                                <form class="form-inline mx-auto">
+                                                                    <input type="search" placeholder="30341" aria-label="Search" class="form-control mr-sm-2">
+                                                                    <button type="submit" class="btn btn-outline-success my-2 my-sm-0">Search</button>
+                                                                </form>
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-xs-12 col-md-6">
+                                                            <div class="itemLookUpReminder">
+                                                                <div class="media"><img src="http://images.booksamillion.com/covers/dvd/8/83/929/103/883929103409_l_2681592.gif" alt="Generic placeholder image" style="max-height: 100px; width: auto;" class="mr-3">
+                                                                    <div class="media-body">
+                                                                        <h5 class="mt-0"><strong>The Book of Eli</strong></h5>
+                                                                        <p class="mb-0">Denzel Washington</p>
+                                                                        <p class="mb-0">DVD</p><small>February 2014</small>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <h2 class="mb-0">Order Shipping Address</h2>
+                                                    </div>
+                                                    <hr class="w-100 my-1">
+                                                    <div class="row">
+                                                        <div class="table-responsive">
+                                                            <table class="table table-hover">
+                                                                <thead>
+                                                                    <th scope="col">#</th>
+                                                                    <th scope="col"><span class="fa fa-map-marker"></span> Store Location</th>
+                                                                    <th scope="col">Availability</th>
+                                                                    <th scope="col"></th>
+                                                                </thead>
+                                                                <tbody class="table">
+                                                                    <tr>
+                                                                        <td>1</td>
+                                                                        <td>
+                                                                            <div class="media"><img src="http://www.rewardtrax.com/catalog/bby/bestbuyImg.png" alt="Generic placeholder image" class="mr-3">
+                                                                                <div class="media-body">
+                                                                                    <h5 class="mt-0"><strong>Alpharetta, GA</strong></h5><a href="https://stores.bestbuy.com/ga/alpharetta/975-n-point-dr-516.html" target="_blank">Directions and Store Hours</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <p>Order Today, Pickup on<span class="inStorePickupDate">6/12/2018</span></p>
+                                                                        </td>
+                                                                        <td><a href="#">Select</a></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>2</td>
+                                                                        <td>
+                                                                            <div class="media"><img src="http://www.rewardtrax.com/catalog/bby/bestbuyImg.png" alt="Generic placeholder image" class="mr-3">
+                                                                                <div class="media-body">
+                                                                                    <h5 class="mt-0"><strong>Perimeter, GA</strong></h5><a href="https://stores.bestbuy.com/ga/dunwoody/1201-hammond-dr-ne-503.html" target="_blank">Directions and Store Hours</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <p>Order Today, Pickup on<span class="inStorePickupDate">5/31/2018</span></p>
+                                                                        </td>
+                                                                        <td><a href="#">Select</a></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>3</td>
+                                                                        <td>
+                                                                            <div class="media"><img src="http://www.rewardtrax.com/catalog/bby/bestbuyImg.png" alt="Generic placeholder image" class="mr-3">
+                                                                                <div class="media-body">
+                                                                                    <h5 class="mt-0"><strong>Town Center at Cobb</strong></h5><a href="https://stores.bestbuy.com/ga/kennesaw/400-ernest-w-barrett-pkwy-nw-2923.html" target="_blank">Directions and Store Hours</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <p class="itemDetail_StoreNotAvailable">Not Available</p>
+                                                                        </td>
+                                                                        <td><a href="#">Select</a></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>4</td>
+                                                                        <td>
+                                                                            <div class="media"><img src="http://www.rewardtrax.com/catalog/bby/bestbuyImg.png" alt="Generic placeholder image" class="mr-3">
+                                                                                <div class="media-body">
+                                                                                    <h5 class="mt-0"><strong>Kennesaw, GA</strong></h5><a href="https://stores.bestbuy.com/ga/kennesaw/850-cobb-place-blvd-nw-501.html" target="_blank">Directions and Store Hours</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <p>Order Today, Pickup on<span class="inStorePickupDate">5/31/2018</span></p>
+                                                                        </td>
+                                                                        <td><a href="#">Select</a></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <select id="inputGroupSelect01" class="custom-select w-50 d-block mb-3">
+                    <option selected=""></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                                <div class="shoppingCartLinks"><a href="shoppingCart_Empty.html" class="d-block mb-2">Remove<span class="fa fa-times-circle"></span></a><a href="wishList.html" class="d-block">Move to Wish List<span class="fa fa-heart"></span></a></div>
+                            </td>
+                            <td>
+                                <div class="shoppingCart_salePrice">1,024</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row">
+                <hr class="w-100">
+                <div class="col-xs-12 col-md-8 shoppingCartLinks_continueShopping"><a data-toggle="modal" data-target="#cancelOrderModal" style="cursor: pointer;" class="shoppingCartLinks"><span class="fa fa-times-circle"></span> Cancel Order</a>
+                    <div id="cancelOrderModal" role="dialog" class="modal fade">
+                        <div class="modal-dialog">
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header w-100">
+                                    <h4 class="modal-title mx-auto">Confirm Order Cancellation</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="orderCancellationMessage">
+                                        <div class="d-block mb-3"><span class="fa fa-ban fa-3x"></span></div>
+                                        <p><strong>This Action Can't Be Undone.</strong></p>
+                                    </div>
+                                    <p class="text-center">Cancelling your order will delete every item in your shopping cart. Are you sure you want to cancel your entire order?</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" data-dismiss="modal" href="shopping.html" class="btn btn-default">Yes</button>
+                                    <button type="button" data-dismiss="modal" style="text-transform: inherit;" class="btn btn-primary">No, I don't want to cancel.</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4 shoppingCart_orderBox w-100"><a href="orderReceipt.html" class="btn btn-primary w-100 mb-0">Confirm Order<span class="fa fa-check-circle"></span></a></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="bottomNavigation">
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a href="faq.html" class="nav-link active">FAQ</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="rules.html" class="nav-link">Rules</a></li>
+                <li class="nav-item"><a href="terms.html" class="nav-link">Terms</a></li>
+                <li class="nav-item"><a href="privacy.html" class="nav-link">Privacy</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link">Logout</a></li>
+            </ul>
+        </div>
+        <div id="copyright">
+            <p>Copyright &copy; 2018 | RewardTrax - Reaching New Heights</p>
+        </div>
+    </footer>
+    <!-- Optional JavaScript-->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.backstretch.min.js"></script>
+    <script>
+        $('section#welcomeWrapper').backstretch("images/newHeightsBg.jpg");
+    </script>
+    <script src="js/bootstrap-validate.js"></script>
+</body>
+
+</html>

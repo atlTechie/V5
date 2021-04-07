@@ -1,0 +1,60 @@
+.infoHeading{
+  background: darken($primary, 15%);
+  @include color-contrast(darken($primary, 15%));
+  @include base-padding(10px, 10px, 0, 0);
+  text-align: center;
+  font-weight: $body-font-weight;
+  h3{
+    font-size: $body-font-size + 2px;
+  }
+}
+
+.infoWrapper{
+  background: lighten($neutral, 10%);
+  @if lightness(lighten($neutral, 10%)) > 65 {
+    color: $text;
+  }@else {
+    color: $white;
+  }
+  @include base-padding();
+  margin-bottom: 60px;
+  &:last-child{
+    margin-bottom: 0;
+  }
+  .card{
+    @include box-shadow();
+    text-align: center;
+    color: $text;
+    p.promotionSaleDatesLabel{
+      font-weight: bold;
+    }
+    p.promotionDescription, h4.promotionName{
+      text-align: left;
+    }
+    .card-title{
+      background: $secondary;
+      @include color-contrast($secondary);
+      text-align: center;
+      h3{
+        font-size: $body-font-size;
+        margin-bottom: 0;
+        @include base-padding(5px, 5px, 0, 0);
+      }
+    }
+    .pointWrapper{
+      font-size: $body-font-size * 2.5;
+    }
+  }
+}
+
+#promotions.infoWrapper{
+
+    .card{
+      margin-bottom: 30px;
+      border-radius: 0;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+
+}

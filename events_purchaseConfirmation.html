@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+	
+    <link rel="stylesheet" href="style.css">
+
+    <title>Purchase Confirmation | RewardTrax - V5</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="container">
+        <div id="shoppingNavigation" class="row">
+          <div style="padding-left: 0;" class="col-xs-12 col-md-2">
+            <div class="dropdown">
+              <button id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-primary dropdown-toggle w-100">Departments</button>
+              <div aria-labelledby="dropdownMenuButton" class="dropdown-menu"><a href="#" class="dropdown-item">Action</a><a href="#" class="dropdown-item">Another action</a><a href="#" class="dropdown-item">Something else here</a></div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-9">
+            <div class="input-group w-100">
+              <div class="input-group-prepend"><span class="departmentSelect"><a href="#" class="btn btn-primary">All<span class="fa fa-caret-down"></span></a></span></div>
+              <input type="text" aria-label="Amount (to the nearest dollar)" class="form-control">
+              <div class="input-group-append"><span><a href="#" class="btn btn-primary"><span class="fa fa-search"></span></a></span></div>
+            </div>
+          </div>
+          <div style="padding:0;" class="col-xs-12 col-md-1">
+            <div class="d-flex flex-row justify-content-between"><a href="shoppingcart.html" class="text-center">
+                <div class="fa fa-shopping-cart fa-2x"></div><br><small style="font-size:12px;">Cart</small></a><a href="wishlist.html" class="text-center">
+                <div class="fa fa-star fa-2x"></div><br><small style="font-size:12px;">Wish List</small></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="col-xs-12 col-md-6 offset-md-3 text-center">
+          <div id="pageIntro" class="my-5">
+            <h2><span class="fa fa-shopping-bag"></span> Order Confirmation</h2>
+            <p>Before we can begin processing your order, you must confirm it.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 text-center p-2 mb-3 purchaseConfirmationMessage">
+            <form class="confirmationMessage">
+              <div class="form-group form-check">
+                <input id="rt_orderConfirmationCheck" type="checkbox" required="required" class="form-check-input">
+                <label for="exampleCheck1" class="form-check-label">Click the check box to confirm your order and agree to the return policy.</label>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <table class="table table-borderless shoppingCart_table">
+            <thead>
+              <tr>
+                <th scope="col" class="purchaseConfirmation_itemDetailColumn">Item</th>
+                <th scope="col" class="purchaseConfirmation_pointsColumn">Total (in points)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">
+                  <div class="shoppingCart_itemInfo d-flex flex-row justify-content-start">
+                    <div class="shoppingCart_imageWrapper"><a href="itemDetail.html"><img src="http://www.rewardtrax.com/brandeddemo15/catalog/lion%20king.jpg" class="img-fluid"></a></div>
+                    <div class="shoppingCart_itemDescription"><a href="itemDetail.html">
+                        <h3 class="shoppingCart_itemTitle">The Lion King</h3></a>
+                      <p class="event_ticketQuantity">1 Ticket(s) for 06/20/2018 at 07:00PM</p>
+                    </div>
+                  </div>
+                </th>
+                <td>
+                  <div class="shoppingCart_salePrice">41,854</div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="row">
+          <hr class="w-100">
+          <div class="col-xs-12 col-md-8 shoppingCartLinks_continueShopping"><a data-toggle="modal" data-target="#cancelOrderModal" style="cursor: pointer;" class="shoppingCartLinks"><span class="fa fa-times-circle"></span> Cancel Order</a>
+            <div id="cancelOrderModal" role="dialog" class="modal fade">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header w-100">
+                    <h4 class="modal-title mx-auto">Confirm Order Cancellation</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="orderCancellationMessage">
+                      <div class="d-block mb-3"><span class="fa fa-ban fa-3x"></span></div>
+                      <p><strong>This Action Can't Be Undone.</strong></p>
+                    </div>
+                    <p class="text-center">Cancelling your order will delete every item in your shopping cart. Are you sure you want to cancel your entire order?</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" href="shopping.html" class="btn btn-secondary">Yes</button>
+                    <button type="button" data-dismiss="modal" style="text-transform: inherit;" class="btn btn-primary">No, I don't want to cancel.</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-4 shoppingCart_orderBox w-100"><a href="orderReceipt.html" class="btn btn-primary w-100 mb-0">Confirm Order <span class="fa fa-check-circle"></span></a></div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+	<!-- Optional JavaScript-->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+   
+    <script src="./js/bootstrap.min.js"></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js'></script>
+    <!-- Backstretch Script for Large Image Backgrounds  -->
+    <script src='./js/jquery.backstretch.js'></script>
+    <script src='./js/responsive-backgrounds.js'></script>
+    <!-- Circle Gauge Script -->
+    <script src='./js/jquery.circliful.min.js'></script>
+    <script src='./js/goal-tracking.js'></script>
+    <!-- Basic Theme Scripts -->
+    <script src='./js/program-specific-scripts.js'></script>
+	<script src="./js/RewardTraxCustom.js">
+    </script>
+
+
+    <script src="js/bootstrap-validate.js"></script>
+  </body>
+</html>

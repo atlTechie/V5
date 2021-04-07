@@ -1,0 +1,13 @@
+footer{
+  $footer-bg: $primary;
+  background: $footer-bg;
+  @include color-contrast($footer-bg);
+
+  text-align: center;
+  #copyright{
+    $copy-bg: darken($primary, 15%);
+    background: $copy-bg;
+    @include color-contrast($copy-bg);
+    @include base-padding();
+  }
+}

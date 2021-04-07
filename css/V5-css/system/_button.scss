@@ -1,0 +1,16 @@
+button,
+.btn,
+.btn-primary,
+.btn-secondary,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  @include buttons(1px, solid, $transparent);
+  @if lightness($accent) > 50 {
+    color: $white;
+  } @else {
+    color: $text;
+  }
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}

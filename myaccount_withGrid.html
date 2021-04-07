@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+    <!--<script type="text/javascript" src='DX/Lib/js/jquery.min.js'></script>-->
+	<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.1.4.min.js"></script>
+    <!--<script type='text/javascript' src='DX/Lib/js/dx.all.js'></script>-->
+	<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/globalize/0.1.1/globalize.min.js"></script>
+	<script type="text/javascript" src="https://cdn3.devexpress.com/jslib/15.2.15/js/dx.all.js"></script>
+
+    <script type='text/javascript' src='js/data.js'></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/18.1.5/css/dx.common.css" />
+	<link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/18.1.5/css/dx.light.css" />
+
+    <!-- Bootstrap CSS-->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+    <!--DX scripts-->
+
+    <!-- Begin My Promotions Grid -->
+    <script>
+    $(function(){
+  $("#selectStatus").dxSelectBox({
+      dataSource: statuses,
+      value: statuses[0],
+      onValueChanged: function(data) {
+          if (data.value == "All")
+              dataGrid.clearFilter();
+          else
+              dataGrid.filter(["Task_Status", "=", data.value]);
+      }
+  });
+
+
+  var dataGrid = $("#myPromotions").dxDataGrid({
+      rowAlternationEnabled: true,
+      showRowLines: false,
+      dataSource: promotions,
+	  wordWrapEnabled: true,
+	  hoverStateEnabled: true,
+	  showColumnLines: false,
+      value: [0],
+      columns: ['Promotion Name', 'Approved', 'Pending', 'Needs Verification', 'Points Awarded', 'Detail'],
+      columnAutoWidth: true,
+      showBorders: true,
+	   headerFilter: {
+            visible: true
+        },
+
+  }).dxDataGrid("instance");
+});
+    </script>
+
+
+
+
+    <!--begin My Transaction History Grid-->
+    <script>
+    $(function(){
+      $("#transactionStatus").dxSelectBox({
+          dataSource: transactionStatus,
+          value: transactionStatus[0],
+          onValueChanged: function(data) {
+              if (data.value == "All")
+                  dataGrid.clearFilter();
+              else
+                  dataGrid.filter(["Type", "=", data.value]);
+          }
+      });
+
+
+      var dataGrid = $("#gridContainer").dxDataGrid({
+          rowAlternationEnabled: true,
+          showRowLines: false,
+		  showColumnLines: false,
+          dataSource: transactionHistory,
+          columnAutoWidth: true,
+		  wordWrapEnabled: true,
+		  hoverStateEnabled: true,
+          showBorders: true,
+        headerFilter: {
+            visible: true
+        },
+		  
+          columns: ['Date', 'Type', 'Description', 'Amount']
+      }).dxDataGrid("instance");
+
+  });
+    </script>
+
+    <!--END GRID-->
+
+
+    <link rel='stylesheet' href='dxStyles.css'>
+    <link rel="stylesheet" href="style.css">
+    <title>My Account | V5 Login</title>
+  </head>
+  <body class='dx-viewport'>
+    <header></header>
+    <main>
+      <div class="container">
+        <div class="col-xs-12 col-md-8 offset-md-2 text-center">
+          <div id="page-titles">
+            <h1><span class="fas fa-chart-bar"></span> My Account</h1>
+            <p>View your account stats at a glance, or dive further for more a more detailed breakdown of your program's activity.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="infoHeading">
+          <h3 class="mb-0">
+            <div class="fa fa-university"></div> My Points
+          </h3>
+        </div>
+        <div class="infoWrapper">
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <div class="card w-100 h-100">
+                            <div class="card-title">
+                                <h3>
+                                    <div class="fa fa-certificate"></div> Awarded
+                                </h3>
+                            </div>
+                            <div class="card-body mx-auto">
+                                <h1>19,025</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="card w-100 h-100">
+                            <div class="card-title">
+                                <h3>
+                                    <div class="fa fa-money"></div> Redeemed
+                                </h3>
+                            </div>
+                            <div class="card-body mx-auto">
+                                <h1>6,354 </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="card w-100 h-100">
+                            <div class="card-title">
+                                <h3>
+                                    <div class="fa fa-database"></div> Remaining
+                                </h3>
+                            </div>
+                            <div class="card-body mx-auto">
+                                <h1>12,671 </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="infoHeading">
+          <h3 class="mb-0">
+            <div class="fa fa-bullhorn"></div> My Promotions
+          </h3>
+        </div>
+        <div class="infoWrapper">
+          
+          <div class="row">
+            <div class="card w-100">
+                <div id='myPromotions'><div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        <div class="infoHeading d-block mt-3">
+          <h3 class="mb-0">
+            <div class="fa fa-history"></div> My Transaction History
+          </h3>
+        </div>
+        <div class="infoWrapper">
+          
+          <div class="row">
+			<div class='d-flex justify-content-end mb-3 align-items-center w-100'>
+				<label class='mb-0 mr-1'>Search by Transaction Type:</label>
+				<div id="transactionStatus"></div>
+			</div>
+            <div class="card w-100">
+
+            
+			
+              <div id="gridContainer"></div>
+
+
+
+
+
+
+            </div>
+          </div>
+        </div>
+        <div class="row d-none">
+          <div class="col-xs-12 col-md-6">
+            <div class="d-flex flex-row justify-content-start align-content-center">
+              <nav aria-label="Page navigation example"></nav>
+              <ul class="pagination">
+                <li class="page-item"><a href="#" aria-label="Previous" class="page-link"><span aria-hidden="true">«</span><span class="sr-only">Previous</span></a></li>
+                <li class="page-item"><a href="#" class="page-link">1</a></li>
+                <li class="page-item"><a href="#" class="page-link">2</a></li>
+                <li class="page-item"><a href="#" class="page-link">3</a></li>
+                <li class="page-item"><a href="#" aria-label="Next" class="page-link"><span aria-hidden="true">»</span><span class="sr-only">Next</span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <div class="d-flex flex-row justify-content-end align-content-center">
+              <p>Record Count</p>
+              <form style="margin-left: 10px; margin-top:-5px;">
+                <div class="form-group">
+                  <select class="custom-select form-control form-control-sm">
+                    <option>10</option>
+                    <option>50</option>
+                    <option>100</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+	<footer></footer>
+    <!-- Optional JavaScript-->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS-->
+<script src='./js/program-specific-scripts.js'></script>
+	<script src="./js/RewardTraxCustom.js">
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.backstretch.min.js"></script>
+    <script>$('section#welcomeWrapper').backstretch("images/newHeightsBg.jpg");</script>
+
+
+  </body>
+</html>

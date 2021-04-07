@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+	
+    <link rel="stylesheet" href="style.css">
+
+    <title>Checkout | RewardTrax - V5</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+        <div class="container">
+            <div id="shoppingNavigation" class="row">
+                <div style="padding-left: 0;" class="col-xs-12 col-md-2">
+                    <div class="dropdown">
+                        <button id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-primary dropdown-toggle w-100">Departments</button>
+                        <div aria-labelledby="dropdownMenuButton" class="dropdown-menu"><a href="#" class="dropdown-item">Action</a><a href="#" class="dropdown-item">Another action</a><a href="#" class="dropdown-item">Something else here</a></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-8">
+                    <div class="input-group w-100">
+                        <div class="input-group-prepend"><span class="departmentSelect"><a href="#" class="btn btn-primary">All<span class="fa fa-caret-down"></span></a>
+                            </span>
+                        </div>
+                        <input type="text" aria-label="Amount (to the nearest dollar)" class="form-control">
+                        <div class="input-group-append"><span><a href="#" class="btn btn-primary"><span class="fa fa-search"></span></a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding:0;" class="col-xs-12 col-md-2">
+                    <div class="col-md-12">
+                        <div class="d-flex flex-row justify-content-between">
+                            <a href="shoppingcart.html" class="text-center">
+                                <div class="fa fa-shopping-cart fa-2x"></div><br><small style="font-size:12px;">Cart</small></a>
+                            <a href="orderReceipt.html" class="text-center">
+                                <div class="fas fa-file fa-2x"></div><br><small style="font-size:12px;">Orders</small></a>
+                            <a href="wishlist.html" class="text-center">
+                                <div class="fa fa-star fa-2x"></div><br><small style="font-size:12px;">Wish List</small></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="col-xs-12 col-md-6 offset-md-3 text-center">
+                <div id="pageIntro" class="my-5">
+                    <h2><span class="fa fa-calculator"></span> Checkout</h2>
+                    <p>Items in your shopping cart expire and will be removed after 30 days. Points and availability subject to change.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-7">
+                    <h4>Order Shipping Address</h4>
+                    <hr class="w-100">
+                    <p><strong>NOTICE:</strong><span>Changing the address here may affect sales tax and can change the points required to redeem items in your cart. Your shipping address can also affect the availability of some items.</span></p>
+                    <form class="mb-3">
+                        <div class="form-group">
+                            <label for="receipient">Recipient</label>
+                            <input id="checkout_inputRecipient" type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="phoneNumber">Phone Number</label>
+                            <input id="checkout_inputPhoneNumber" type="text" class="form-control w-50">
+                        </div>
+                        <div class="form-group">
+                            <label for="country">Country</label>
+                            <input id="checkout_inputCountry" type="text" placeholder="USA" class="form-control w-25">
+                        </div>
+                        <div class="form-group">
+                            <label for="streetAddress">Street Address</label>
+                            <input id="checkout_inputStreetAddress" type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="address2">Address 2</label>
+                            <input id="checkout_inputAddress2" type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input id="checkout_inputCity" type="text" class="form-control w-50">
+                        </div>
+                        <div class="form-group">
+                            <label for="state">State</label>
+                            <input id="checkout_inputState" type="text" style="width: 10%;" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="zipCode">Zip Code</label>
+                            <input id="checkout_inputZipCode" type="text" class="form-control w-25">
+                        </div>
+                        <div class="form-group form-check">
+                            <input id="exampleCheck1" type="checkbox" class="form-check-input">
+                            <label for="exampleCheck1" class="form-check-label">Update Profile</label>
+                        </div>
+                    </form>
+                    <h4>Purchasing Information</h4>
+                    <hr class="w-100">
+                    <p> The points required to purchase your items will be deducted from your account balance.</p>
+                    <p><strong>Here's how our order processing works:</strong></p>
+                    <ul class="checkoutProcess">
+                        <li>First, we convert your points to a currency equivalent. For example, we may convert your points into a US dollar ($) equivalent.</li>
+                        <li>Next, using a background program account for currency transactions, we make the purchase of your item from a supplier on your behalf, for instance in dollars.</li>
+                        <li>Then, we subtract the corresponding number of points from your point account. The items are shipped to you directly from the supplier.</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-5">
+                    <div class="shoppingCart_totalBox mb-3">
+                        <div class="row">
+                            <div class="d-flex flex-row justify-content-between"></div>
+                            <div class="w-75">
+                                <p class="checkout_orderTotal"><span class="fa fa-university"></span> Account balance<strong>before</strong><span>purchase:</span></p>
+                                <p class="checkout_remainingPoints"><span class="fa fa-credit-card"></span> Points required for purchase:</p>
+                                <p class="checkout_accountBalanceAfter"><span class="fas fa-money-bill-alt"></span> Account Balance <strong>after </strong><span>purchase:</span></p>
+                                <p class="checkout_totalSavings"><span class="fa fa-bolt"></span><strong> Total Savings</strong><span>on order:</span></p>
+                            </div>
+                            <div class="w-25 text-right">
+                                <p class="checkout_accountBalanceBefore">64,500</p>
+                                <h3 class="checkout_pointsRequired">1,024</h3>
+                                <p class="checkout_accountBalanceAfter">63,476</p>
+                                <p class="checkout_totalSavingsAmount">3,000</p>
+                            </div>
+                        </div>
+                        <div class="row"><a href="purchaseConfirmation_inStorePickup.html" class="btn btn-primary w-100 mb-0">Continue Checkout<span class="fa fa-check-circle"></span></a></div>
+                    </div>
+                    <div class="text-center w-100"><a href="shopping.html" class="shoppingCartLinks"><span class="fa fa-arrow-circle-left"></span> Continue Shopping</a></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+	<!-- Optional JavaScript-->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+   
+    <script src="./js/bootstrap.min.js"></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js'></script>
+    <!-- Backstretch Script for Large Image Backgrounds  -->
+    <script src='./js/jquery.backstretch.js'></script>
+    <script src='./js/responsive-backgrounds.js'></script>
+    <!-- Circle Gauge Script -->
+    <script src='./js/jquery.circliful.min.js'></script>
+    <script src='./js/goal-tracking.js'></script>
+    <!-- Basic Theme Scripts -->
+    <script src='./js/program-specific-scripts.js'></script>
+	<script src="./js/RewardTraxCustom.js">
+    </script>
+</body>
+
+</html>

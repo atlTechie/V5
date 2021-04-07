@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Login | V5 Login</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-top">
+      <div class="container"><a href="#" class="navbar-brand"> </a>
+        <button type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"></button><span class="navbar-toggler-icon"></span>
+        <div id="navbarNav" class="collapse navbar-collapse"></div>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="rules.html" class="nav-link">Rules</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container"><a href="#" class="navbar-brand">NewV5</a>
+        <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="fa fa-bars"></span></button>
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a href="enrollment.html" class="nav-link">Enrollment<span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a href="terms.html" class="nav-link">Terms</a></li>
+            <li class="nav-item"><a href="privacy.html" class="nav-link">Privacy</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main id="loginPage">
+      <div class="container">
+        <div class="row d-flex flex-row justify-content-center align-content-center">
+          <div class="col-sm-12 col-md-6 d-flex flex-column">
+            <div class="row">
+              <h1 class="text-center">Reach New Heights With Total Recognition Rewards!</h1>
+            </div>
+            <div class="row">
+              <div class="loginBox">
+                <h2>You've Been Logged Out.</h2>
+                <p>Please sign in to continue to Total Recognition Rewards!</p>
+                <form class="d-flex flex-column text-left">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Enter email" class="form-control"><small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input id="exampleInputPassword1" type="password" placeholder="Password" class="form-control">
+                  </div>
+                  <div class="col-xs-12 col-md-6 offset-md-3"> <a href="welcome.html" type="submit" class="btn btn-primary w-100 mb-2">Login  <span class="fa fa-sign-in"> </span></a><a href="#" data-toggle="modal" data-target="#forgotPassword" class="text-center d-block">Forgot your password?  </a><a href="enrollment.html" class="text-center d-block">Are you new here?</a></div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+<!-- Modal-->
+<div id="forgotPassword" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade">
+  <div role="document" class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 id="exampleModalLabel" class="modal-title w-100 mx-auto text-center"><span class="fa fa-key"> </span> Password Reset Request </h4>
+        <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+      </div>
+      <div class="modal-body">
+        <p>Please input your email address and create a 4 digit passcode. Password reset instructions will be sent to your email address. Remember the passcode you created. You will need it to complete your password reset.</p>
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="you@yourcompany.com" class="form-control"><small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Create 4 Digit Passcode:</label>
+            <input id="exampleInputPassword1" type="password" placeholder="" class="form-control w-25">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary">Submit     <span class="fa fa-check-circle"></span></button>
+      </div>
+    </div>
+    <!-- Optional JavaScript-->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.backstretch.min.js"></script>
+    <script>
+      $('main#loginPage').backstretch("images/newHeightsBg.jpg");
+
+    </script>
+  </div>
+</div>

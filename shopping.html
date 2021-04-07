@@ -1,0 +1,1628 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Shopping Landing | RewardTrax - V5</title>
+
+    <style>
+      /* li.dropdown-submenu a#shoppingMenuLabel {
+        transition-timing-function: ease-in-out 1s;
+        -moz-transition-timing-function: ease-in-out 1s;
+        -o-transition-timing-function: ease-in-out 1s;
+        -webkit-transition-timing-function: ease-in-out 1s;
+        transition-duration: 1s;
+      }
+
+      .fade {
+        opacity: 1;
+        transition: opacity 0.4s ease-in-out;
+        -moz-transition: opacity 0.4s ease-in-out;
+        -webkit-transition: opacity 0.4s ease-in-out;
+      }
+
+      #imageContainer img {
+        width: 427px;
+        background-repeat: no-repeat;
+      }
+
+      .dropdown-submenu {
+        position: initial;
+      }
+
+      ul.dropdown-menu {
+        transition-timing-function: ease-in 2s;
+        -moz-transition-timing-function: ease-in 2s;
+        -o-transition-timing-function: ease-in 2s;
+        -webkit-transition-timing-function: ease-in s;
+        transition-duration: 1s;
+      }
+
+      ul.dropdown-menu li a {
+        transition-timing-function: ease-out 0.5s;
+        -moz-transition-timing-function: ease-out 0.5s;
+        -o-transition-timing-function: ease-out 0.5s;
+        -webkit-transition-timing-function: ease-out 0.5s;
+        transition-duration: 0.5s;
+      }
+
+      ul.dropdown-menu li.dropdown-submenu {
+        transition-timing-function: ease-out 3s;
+        -moz-transition-timing-function: ease-out 3s;
+        -o-transition-timing-function: ease-out 3s;
+        -webkit-transition-timing-function: ease-out 3s;
+        transition-duration: 3s;
+      }
+
+      ul.dropdown-menu li.dropdown-submenu a:hover {
+        font-weight: bold;
+      }
+
+      li.dropdown-submenu a ul.dropdown-menu {
+        transition: ease-out;
+      }
+
+      .dropdown-content a:hover {
+        background: transparent;
+        font-weight: bold;
+      }
+
+      li.dropdown-submenu a:hover {
+        font-weight: bold !important;
+      }
+
+      .dropdown-submenu > .dropdown-menu {
+        top: 0;
+        left: 95%;
+        margin-top: -6px;
+        margin-left: -1px;
+        padding-left: 10px;
+        border: 0;
+        border-left: 2px solid #f1f1f1 !important;
+        height: 800px;
+      }
+
+      .dropdown-submenu:hover > .dropdown-menu {
+        display: block;
+      }
+
+      .dropdown-submenu > a:after {
+        display: block;
+        content: " ";
+        float: right;
+        width: 0;
+        height: 0;
+        border-color: transparent;
+        border-style: solid;
+        border-width: 5px 0 5px 5px;
+        border-left-color: searchResults.htmlccc;
+        margin-top: 5px;
+        margin-right: 0px;
+      }
+
+      .dropdown-submenu:hover > a:after {
+        border-left-color: searchResults.htmlfff;
+      }
+
+      .dropdown-submenu.pull-left {
+        float: none;
+      }
+
+      .dropdown-submenu.pull-left > .dropdown-menu {
+        left: -100%;
+        margin-left: 10px;
+        border: 0;
+      }
+
+      ul.mainDropDown {
+        margin: 0;
+        padding: 0;
+      }
+
+      ul.mainDropDown li {
+        list-style: none;
+      }
+
+      ul.dropdown-menu {
+        width: 285px;
+      }
+
+      li.dropdown-submenu a {
+        display: block;
+      }
+
+      @media only screen and (max-width: 800px) {
+        ul.dropdown-menu {
+          width: 150px;
+        }
+      } */
+    </style>
+  </head>
+
+  <body>
+    <header></header>
+    <main>
+      <!--Begin Edits/Additions in Container-->
+      <div class="container">
+        <div id="shoppingNavigation" class="row">
+          <div class="col-12 col-md-3 pl-md-0">
+            <button
+              class="btn btn-primary dropdown-toggle btn-block"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Departments
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <div class="row">
+                <div class="mega-menu-col col-12 col-md-4 col-lg-3">
+                  <h5>Shop our...</h5>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <span class="fas fa-shopping-cart mr-3"></span>
+                        <span>Catalog</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fas fa-ticket-alt mr-3"></span>
+                        <span>Events</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fas fa-plane-departure mr-3"></span>
+                        <span>Travel</span>
+                      </a>
+                    </li>
+                  </ul>
+
+                  <!-- Uncomment this when finished -->
+                  <div class="d-none flex-column nav nav-tabs">
+                    <!--Shopping-->
+                    <!---->
+                    <ul class="mainDropDown">
+                      <li
+                        data-submenu-id="shopping"
+                        class="dropdown-submenu"
+                        role="menu"
+                      >
+                        <a
+                          tabindex="1"
+                          style="width: 175px"
+                          href="searchResults.html"
+                          id="shoppingMenuLabel"
+                          class="dropdown-item"
+                        >
+                          <div class="fa fa-tags"></div>
+                          Shopping
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li
+                            data-submenu-id="appleStore"
+                            class="dropdown-submenu"
+                          >
+                            <a tabindex="1" href="#" id="appleStoreMenuLabel">
+                              Apple Store</a
+                            >
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a href="searchResults.html" id="apple1"
+                                  >iPods
+                                </a>
+                              </li>
+                              <li>
+                                <a href="searchResults.html" id="apple2"
+                                  >iPod Accessories
+                                </a>
+                              </li>
+                              <li>
+                                <a href="searchResults.html" id="apple3"
+                                  >Watches</a
+                                >
+                              </li>
+                              <li>
+                                <a href="searchResults.html" id="apple4"
+                                  >Mac Systems</a
+                                >
+                              </li>
+                              <li>
+                                <a href="searchResults.html" id="apple5"
+                                  >iPads</a
+                                >
+                              </li>
+                              <li>
+                                <a href="searchResults.html" id="apple6"
+                                  >Shop All Apple Store</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="dropdown-submenu" role="menu">
+                            <a
+                              tabindex="1"
+                              href="searchResults.html"
+                              id="babyMenuLabel"
+                            >
+                              Baby</a
+                            >
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a href="searchResults.html" id="baby1"
+                                  >Clothing</a
+                                >
+                              </li>
+                              <li>
+                                <a href="searchResults.html" id="baby2"
+                                  >Feeding</a
+                                >
+                              </li>
+                              <li>
+                                <a href="searchResults.html" id="baby3"
+                                  >Gear
+                                </a>
+                              </li>
+                              <li>
+                                <a href="searchResults.html" id="baby4"
+                                  >Maternity</a
+                                >
+                              </li>
+                              <li>
+                                <a href="searchResults.html" id="baby5"
+                                  >Nursery
+                                </a>
+                              </li>
+                              <li>
+                                <a href="searchResults.html" id="baby6"
+                                  >Care & Safety</a
+                                >
+                              </li>
+                              <li>
+                                <a href="searchResults.html" id="baby7"
+                                  >Shop All Baby</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="dropdown-submenu" role="menu">
+                            <a
+                              tabindex="1"
+                              href="searchResults.html"
+                              id="booksMenuLabel"
+                            >
+                              Books</a
+                            >
+                            <ul class="dropdown-menu dropup">
+                              <li>
+                                <a href="searchResults.html" id="books1"
+                                  >Autobiography & Biography</a
+                                >
+                              </li>
+                              <li>
+                                <a href="searchResults.html" id="books2"
+                                  >Cooking
+                                </a>
+                              </li>
+                              <li>
+                                <a href="searchResults.html" id="books3"
+                                  >Health & Fitness</a
+                                >
+                              </li>
+                              <li>
+                                <a href="searchResults.html" id="books4"
+                                  >History</a
+                                >
+                              </li>
+                              <li>
+                                <a href="searchResults.html" id="books5"
+                                  >Humor
+                                </a>
+                              </li>
+                              <li>
+                                <a href="searchResults.html" id="books6"
+                                  >Juvenile NonFiction</a
+                                >
+                              </li>
+                              <li>
+                                <a href="searchResults.html" id="books7"
+                                  >Juvenile Fiction</a
+                                >
+                              </li>
+                              <li>
+                                <a href="searchResults.html" id="books8"
+                                  >Religion</a
+                                >
+                              </li>
+                              <li>
+                                <a href="searchResults.html" id="books9"
+                                  >Social Science</a
+                                >
+                              </li>
+                              <li>
+                                <a href="searchResults.html" id="books10"
+                                  >Sports & Recreation</a
+                                >
+                              </li>
+                              <li>
+                                <a href="searchResults.html" id="books11"
+                                  >Shop All Books</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="dropdown-submenu" role="menu">
+                            <a
+                              tabindex="1"
+                              href="searchResults.html"
+                              id="electronicsMenuLabel"
+                            >
+                              Electronics</a
+                            >
+                            <ul class="dropdown-menu">
+                              <li><a href="searchResults.html">Link 1</a></li>
+                              <li>
+                                <a href="searchResults.html">Link 2 </a>
+                              </li>
+                              <li><a href="searchResults.html">Link 3</a></li>
+                            </ul>
+                          </li>
+                          <li
+                            class="dropdown-submenu"
+                            role="menu"
+                            id="fashionAccMenuLabel"
+                          >
+                            <a tabindex="1" href="searchResults.html">
+                              Fashion Accessories</a
+                            >
+                            <ul class="dropdown-menu">
+                              <li><a href="searchResults.html">Link 1</a></li>
+                              <li>
+                                <a href="searchResults.html">Link 2 </a>
+                              </li>
+                              <li><a href="searchResults.html">Link 3</a></li>
+                            </ul>
+                          </li>
+                          <li
+                            class="dropdown-submenu"
+                            role="menu"
+                            id="giftBasketsMenuLabel"
+                          >
+                            <a tabindex="1" href="searchResults.html">
+                              Gift Baskets</a
+                            >
+                            <ul class="dropdown-menu">
+                              <li><a href="searchResults.html">Link 1</a></li>
+                              <li>
+                                <a href="searchResults.html">Link 2 </a>
+                              </li>
+                              <li><a href="searchResults.html">Link 3</a></li>
+                            </ul>
+                          </li>
+                          <li
+                            class="dropdown-submenu"
+                            role="menu"
+                            id="homeGardenMenuLabel"
+                          >
+                            <a tabindex="1" href="searchResults.html">
+                              Home & Garden</a
+                            >
+                            <ul class="dropdown-menu">
+                              <li><a href="searchResults.html">Link 1</a></li>
+                              <li>
+                                <a href="searchResults.html">Link 2 </a>
+                              </li>
+                              <li><a href="searchResults.html">Link 3</a></li>
+                            </ul>
+                          </li>
+                          <li
+                            class="dropdown-submenu"
+                            role="menu"
+                            id="jewelryMenuLabel"
+                          >
+                            <a tabindex="1" href="searchResults.html">
+                              Jewelry</a
+                            >
+                            <ul class="dropdown-menu">
+                              <li><a href="searchResults.html">Link 1</a></li>
+                              <li>
+                                <a href="searchResults.html">Link 2 </a>
+                              </li>
+                              <li><a href="searchResults.html">Link 3</a></li>
+                            </ul>
+                          </li>
+                          <li
+                            class="dropdown-submenu"
+                            role="menu"
+                            id="moviesMenuLabel"
+                          >
+                            <a tabindex="1" href="searchResults.html">
+                              Movies</a
+                            >
+                            <ul class="dropdown-menu">
+                              <li><a href="searchResults.html">Link 1</a></li>
+                              <li>
+                                <a href="searchResults.html">Link 2 </a>
+                              </li>
+                              <li><a href="searchResults.html">Link 3</a></li>
+                            </ul>
+                          </li>
+                          <li
+                            class="dropdown-submenu"
+                            role="menu"
+                            id="musicMenuLabel"
+                          >
+                            <a tabindex="1" href="searchResults.html"> Music</a>
+                            <ul class="dropdown-menu">
+                              <li><a href="searchResults.html">Link 1</a></li>
+                              <li>
+                                <a href="searchResults.html">Link 2 </a>
+                              </li>
+                              <li><a href="searchResults.html">Link 3</a></li>
+                            </ul>
+                          </li>
+                          <li class="dropdown-submenu" role="menu">
+                            <a
+                              tabindex="1"
+                              href="searchResults.html"
+                              id="officeProductsMenuLabel"
+                            >
+                              Office Products</a
+                            >
+                            <ul class="dropdown-menu">
+                              <li><a href="searchResults.html">Link 1</a></li>
+                              <li>
+                                <a href="searchResults.html">Link 2 </a>
+                              </li>
+                              <li><a href="searchResults.html">Link 3</a></li>
+                            </ul>
+                          </li>
+                          <li
+                            class="dropdown-submenu"
+                            role="menu"
+                            id="onSaleNowMenuLabel"
+                          >
+                            <a tabindex="1" href="searchResults.html">
+                              On Sale Now!</a
+                            >
+                            <ul class="dropdown-menu">
+                              <li><a href="searchResults.html">Link 1</a></li>
+                              <li>
+                                <a href="searchResults.html">Link 2 </a>
+                              </li>
+                              <li><a href="searchResults.html">Link 3</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <!--Catalog
+                                    <a data-toggle="tab" style="width:
+                                        175px" id="catalogMenuLabel"
+                                        href="searchResults.html">
+                                        <div class="fa fa-book">
+                                        </div>Catalog
+                                    </a>
+                                -->
+                    <!--Events-->
+                    <ul class="mainDropDown">
+                      <li class="dropdown-submenu" role="menu">
+                        <a
+                          tabindex="1"
+                          style="width: 175px"
+                          id="eventsMenuLabel"
+                          href="searchResults.html"
+                        >
+                          <div
+                            class="fas fa-ticket-alt"
+                            style="margin: 0 5px 0 0"
+                          ></div>
+                          Events
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a href="searchResults.html">Link 1 </a></li>
+                          <li><a href="searchResults.html">Link 2 </a></li>
+                          <li><a href="searchResults.html">Link 3</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <!--Travel-->
+                    <ul class="mainDropDown">
+                      <li class="dropdown-submenu" role="menu">
+                        <a
+                          tabindex="1"
+                          style="width: 175px"
+                          id="travelMenuLabel"
+                          href="searchResults.html"
+                        >
+                          <div class="fa fa-plane"></div>
+                          Travel
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a href="searchResults.html">Link 1 </a></li>
+                          <li><a href="searchResults.html">Link 2 </a></li>
+                          <li><a href="searchResults.html">Link 3</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <!--End of DropDown Container Style-->
+                </div>
+                <div class="mega-menu-col col-12 col-md-4 col-lg-3 tab-content">
+                  <h5>Departments</h5>
+                  <!--second level here-->
+                  <ul>
+                    <li><a href="#">Apple Products</a></li>
+                    <li><a href="#">Baby</a></li>
+                    <li><a href="#">Books</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-col col-12 col-md-4 col-lg-3 tab-content">
+                  <h5>Items</h5>
+                  <ul>
+                    <li><a href="#">Ipad</a></li>
+                    <li><a href="#">Ipod</a></li>
+                    <li><a href="#">Mac Systems</a></li>
+                  </ul>
+                  <!--3rd level here-->
+                </div>
+                <!-- Image Mapping to Department/Shopping parent categories-->
+                <div
+                  class="mega-menu-col col-12 col-md-12 d-none d-lg-block bg-warning col-lg-3 pl-lg-0"
+                >
+                  <img
+                    src="./images/appleV5.jpg"
+                    class="img-fluid"
+                    id="appleStoreLogo"
+                  />
+                  <div
+                    id="imageContainer"
+                    class="d-flex justify-content-end align-content-end"
+                  >
+                    <div>
+                      <img
+                        src="./images/appleV5.jpg"
+                        class="img-fluid"
+                        id="appleStoreLogo"
+                        style="display: none"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="C:\Users\wteel\Documents\electronicsV5.jpg"
+                        class="img-fluid"
+                        id="electronicsLogo"
+                        style="display: none"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="C:\Users\wteel\Documents\jewelryV5.jpg"
+                        class="img-fluid"
+                        id="jewelryLogo"
+                        style="display: none"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="C:\Users\wteel\Documents\HGV5.jpg"
+                        class="img-fluid"
+                        id="homeGardenLogo"
+                        style="display: none"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="C:\Users\wteel\Documents\onsalenowV5.jpg"
+                        class="img-fluid"
+                        id="onSaleNowLogo"
+                        style="display: none"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="C:\Users\wteel\Documents\moviesV5.jpg"
+                        class="img-fluid"
+                        id="moviesLogo"
+                        style="display: none"
+                      />
+                    </div>
+                    <!--<div><img src="images/shoppingV5.jpg" class="img-fluid" id="moviesLogo" style="display: none"></div>-->
+                    <div>
+                      <img
+                        src="C:\Users\wteel\Documents\shoppingV5.jpg"
+                        class="img-fluid"
+                        id="shoppingLogo"
+                        style="display: none"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="C:\Users\wteel\Documents\musicV5.jpg"
+                        class="img-fluid"
+                        id="musicLogo"
+                        style="display: none"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="C:\Users\wteel\Documents\babyV5.jpg"
+                        class="img-fluid"
+                        id="babyLogo"
+                        style="display: none"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="C:\Users\wteel\Documents\booksV5.jpg"
+                        class="img-fluid"
+                        id="booksLogo"
+                        style="display: none"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="C:\Users\wteel\Documents\giftbasketV5.jpg"
+                        class="img-fluid"
+                        id="giftbasketsLogo"
+                        style="display: none"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="C:\Users\wteel\Documents\fashionV5.jpg"
+                        class="img-fluid"
+                        id="fashionLogo"
+                        style="display: none"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="C:\Users\wteel\Documents\officeV5.jpg"
+                        class="img-fluid"
+                        id="officeLogo"
+                        style="display: none"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="C:\Users\wteel\Documents\eventsV5.jpg"
+                        class="img-fluid"
+                        id="eventsLogo"
+                        style="display: none"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="C:\Users\wteel\Documents\catalogV5.jpg"
+                        class="img-fluid"
+                        id="catalogLogo"
+                        style="display: none"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="C:\Users\wteel\Documents\travelV5.jpg"
+                        class="img-fluid"
+                        id="travelLogo"
+                        style="display: none"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!--End Image Mapping-->
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-7">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="departmentSelect"
+                  ><a href="searchResults.html" class="btn btn-primary"
+                    >All <span class="fa fa-caret-down"></span
+                  ></a>
+                </span>
+              </div>
+              <input
+                type="text"
+                aria-label="Amount (to the
+                        nearest dollar)"
+                class="form-control"
+              />
+              <div class="input-group-append">
+                <span
+                  ><a href="searchResults.html" class="btn btn-primary">
+                    <span class="fa fa-search"></span
+                  ></a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-3 col-lg-2 my-2 px-lg-0 pg-warning">
+            <div class="col-6 col-md-12 mx-auto px-lg-0">
+              <div class="d-flex flex-row justify-content-between">
+                <a href="shoppingcart.html" class="text-center">
+                  <div class="fa fa-shopping-cart"></div>
+                  <br /><small class="d-none d-lg-block" style="font-size: 12px"
+                    >Cart</small
+                  >
+                </a>
+                <a href="orderReceipt.html" class="text-center px-2">
+                  <div class="fas fa-file"></div>
+                  <br /><small class="d-none d-lg-block" style="font-size: 12px"
+                    >Orders</small
+                  >
+                </a>
+                <a href="wishlist.html" class="text-center">
+                  <div class="fa fa-star"></div>
+                  <br /><small class="d-none d-lg-block" style="font-size: 12px"
+                    >Wish List</small
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          id="shopDepartmentButtons"
+          class="row d-none d-md-flex justify-content-between"
+        >
+          <a href="shopping.html" class="btn btn-primary"
+            >Shopping <span class="fa fa-tags"></span></a
+          ><a href="events.html" class="btn btn-primary"
+            >Events <span class="fas fa-ticket-alt"> </span></a
+          ><a href="searchResults.html" class="btn btn-primary"
+            >Travel <span class="fa fa-plane"></span
+          ></a>
+        </div>
+        <div id="imageRotator" class="row d-none d-md-block">
+          <script>
+            var random_image_array = [
+              "shoppingHeader_electronics.jpg",
+              "shoppingHeader_gaming.jpg",
+              "shoppingHeader-sports.jpg",
+            ];
+
+            function getRandomImage(imgAr, path) {
+              path = path || "images/"; // default path here
+              var num = Math.floor(Math.random() * imgAr.length);
+              var img = imgAr[num];
+              var imgStr = '<img src="' + path + img + '" class = "">';
+              document.write(imgStr);
+              document.close();
+            }
+            getRandomImage(random_image_array);
+          </script>
+          <!--img.img-fluid(src='images/shoppingHeader.png')-->
+        </div>
+        <div
+          id="topCategoriesButtons"
+          class="row d-none d-xl-flex justify-content-center"
+        >
+          <div class="col-12 px-0 justify-content-center d-flex">
+            <a href="searchResults.html" class="btn btn-primary">Electronics </a
+            ><a href="searchResults.html" class="btn btn-primary"
+              >Home & Garden </a
+            ><a href="searchResults.html" class="btn btn-primary">Jewelry </a
+            ><a href="searchResults.html" class="btn btn-primary">Movies </a>
+            <a href="searchResults.html" class="btn btn-primary"
+              >Video Games
+            </a>
+            <a href="searchResults.html" class="btn btn-primary"
+              >Sporting Goods </a
+            ><a href="searchResults.html" class="btn btn-primary">Apple </a
+            ><a href="searchResults.html" class="btn btn-primary"
+              >On Sale Now!</a
+            ><a href="searchResults.html" class="btn btn-primary"
+              >Tools & Hardware</a
+            >
+          </div>
+        </div>
+        <div class="row d-none d-lg-block">
+          <div class="col-12 col-xl-6 mx-xl-auto text-center">
+            <div id="pageIntro" class="mt-5 mb-3">
+              <h2 class="h4">
+                <span class="fa fa-heart"></span> Reward Yourself
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            id="carouselExampleIndicators"
+            data-ride="carousel"
+            class="carousel slide w-100 text-center d-none d-lg-block"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="carousel-card col-lg-3 h-100">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="itemWrapper">
+                          <a
+                            class="rewardyourselfitemimagelink"
+                            href="catalog.aspx?action=detail&amp;ct=26&amp;mci=60038275&amp;cn=RT6331929&amp;si=Home"
+                            ><img
+                              class="img-fluid"
+                              src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6331/6331929fp.gif"
+                              alt="Click for more information"
+                              height="70"
+                          /></a>
+                        </div>
+                      </div>
+                      <div class="card-price">
+                        <span class="from-label">From 90,811 points</span
+                        ><span class="points-label"></span>
+                      </div>
+                    </div>
+                    <div class="rt-carousel-item-title">
+                      Dyson - V11 Torque Drive Cord-Free Vacuu<b>...</b>
+                    </div>
+                  </div>
+                  <div class="carousel-card col-lg-3 h-100">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="itemWrapper">
+                          <a
+                            class="rewardyourselfitemimagelink"
+                            href="catalog.aspx?action=detail&amp;ct=29&amp;v=613&amp;mci=60132112&amp;cn=RT%7bB77815B3-A9B8-432D-B050-0014E6291050%7d&amp;si=Jewelry"
+                            ><img
+                              class="img-fluid"
+                              src="https://secure.replink.net/evault/63CE824A-5354-4B39-98E2-079A29E73790/B77815B3-A9B8-432D-B050-0014E6291050/B77815B3-A9B8-432D-B050-0014E6291050-tn.jpg"
+                              alt="Click for more information"
+                              height="70"
+                          /></a>
+                        </div>
+                      </div>
+                      <div class="card-price">
+                        <span class="from-label">From 79,367 points</span
+                        ><span class="points-label"></span>
+                      </div>
+                    </div>
+                    <div class="rt-carousel-item-title">
+                      PARIKHS Certified PARIKHS Round Popular <b>...</b>
+                    </div>
+                  </div>
+                  <div class="carousel-card col-lg-3 h-100">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="itemWrapper">
+                          <a
+                            class="rewardyourselfitemimagelink"
+                            href="catalog.aspx?action=detail&amp;ct=29&amp;v=613&amp;mci=60132112&amp;cn=RT%7bB77815B3-A9B8-432D-B050-0014E6291050%7d&amp;si=Jewelry"
+                            ><img
+                              class="img-fluid"
+                              src="https://secure.replink.net/evault/63CE824A-5354-4B39-98E2-079A29E73790/B77815B3-A9B8-432D-B050-0014E6291050/B77815B3-A9B8-432D-B050-0014E6291050-tn.jpg"
+                              alt="Click for more information"
+                              height="70"
+                          /></a>
+                        </div>
+                      </div>
+                      <div class="card-price">
+                        <span class="from-label">From 79,367 points</span
+                        ><span class="points-label"></span>
+                      </div>
+                    </div>
+                    <div class="rt-carousel-item-title">
+                      PARIKHS Certified PARIKHS Round Popular <b>...</b>
+                    </div>
+                  </div>
+                  <div class="carousel-card col-lg-3 h-100">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="itemWrapper">
+                          <a
+                            class="rewardyourselfitemimagelink"
+                            href="catalog.aspx?action=detail&amp;ct=26&amp;mci=60037291&amp;cn=RT6348901&amp;si=Electronics"
+                            ><img
+                              class="img-fluid"
+                              src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6348/6348901fp.gif"
+                              alt="Click for more information"
+                              height="70"
+                          /></a>
+                        </div>
+                      </div>
+                      <div class="card-price">
+                        <span class="from-label">From 15,136 points</span
+                        ><span class="points-label"></span>
+                      </div>
+                    </div>
+                    <div class="rt-carousel-item-title">
+                      Insignia™ - Front and Rear-Facing Camera<b>...</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carouselExampleIndicators"
+                  style="
+                    background-color: #ced4da !important;
+                    margin-bottom: 4%;
+                  "
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  style="
+                    background-color: #ced4da !important;
+                    margin-bottom: 4%;
+                  "
+                  data-slide-to="1"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  style="
+                    background-color: #ced4da !important;
+                    margin-bottom: 4%;
+                  "
+                  data-slide-to="2"
+                ></li>
+              </ol>
+            </div>
+            <a
+              style="background-color: #ced4da; width: 5%"
+              href="#carouselExampleIndicators"
+              role="button"
+              data-slide="prev"
+              class="carousel-control-prev"
+              ><span
+                aria-hidden="false"
+                class="carousel-control-prev-icon"
+              ></span
+              ><span class="sr-only">Previous</span></a
+            >
+            <a
+              style="background-color: #ced4da; width: 5%"
+              href="#carouselExampleIndicators"
+              role="button"
+              data-slide="next"
+              class="carousel-control-next"
+              ><span
+                aria-hidden="true"
+                class="carousel-control-next-icon"
+              ></span
+              ><span class="sr-only">Next</span></a
+            >
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-xl-6 mx-xl-auto text-center">
+            <div id="pageIntro" class="mt-5 mb-3">
+              <h2 class="h4">
+                <span class="fa fa-table"></span> Featured Departments
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div id="shoppingGrid">
+          <div class="row justify-content-center">
+            <div class="col-12 mb-3 col-sm-6 col-lg-4">
+              <a href="searchResults.html" class="shoppingCard">
+                <div class="card w-100">
+                  <div class="card-body">
+                    <div class="itemWrapper">
+                      <img
+                        src="http://rewardtrax.com/isiprogram/images/Final_Electronics_150.png"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <h4>Electronics</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 mb-3 col-sm-6 col-lg-4">
+              <a href="searchResults.html" class="shoppingCard">
+                <div class="card w-100">
+                  <div class="card-body">
+                    <div class="itemWrapper">
+                      <img
+                        src="http://rewardtrax.com/isiprogram/images/HomeGarden_150.png"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <h4>Home & Garden</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 mb-3 col-sm-6 col-lg-4">
+              <a href="searchResults.html" class="shoppingCard">
+                <div class="card w-100">
+                  <div class="card-body">
+                    <div class="itemWrapper">
+                      <img
+                        src="http://rewardtrax.com/isiprogram/images/Final_Jewelry_150.png"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <h4>Jewelry</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 mb-3 col-sm-6 col-lg-4">
+              <a href="searchResults.html" class="shoppingCard">
+                <div class="card w-100">
+                  <div class="card-body">
+                    <div class="itemWrapper">
+                      <img
+                        src="http://rewardtrax.com/isiprogram/images/Final_Movies_150.png"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <h4>Movies</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 mb-3 col-sm-6 col-lg-4">
+              <a href="searchResults.html" class="shoppingCard">
+                <div class="card w-100">
+                  <div class="card-body">
+                    <div class="itemWrapper">
+                      <img
+                        src="http://rewardtrax.com/isiprogram/images/Final_VideoGames_150.png"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <h4>Video Games</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 mb-3 col-sm-6 col-lg-4">
+              <a href="searchResults.html" class="shoppingCard">
+                <div class="card w-100">
+                  <div class="card-body">
+                    <div class="itemWrapper">
+                      <img
+                        src="http://rewardtrax.com/isiprogram/images/Final_SportingGoods_150.png"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <h4>Sporting Goods</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 mb-3 col-sm-6 col-lg-4">
+              <a href="searchResults.html" class="shoppingCard">
+                <div class="card w-100">
+                  <div class="card-body">
+                    <div class="itemWrapper">
+                      <img
+                        src="http://rewardtrax.com/isiprogram/images/Final_Apple_150.png"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <h4>Apple</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 mb-3 col-sm-6 col-lg-4">
+              <a href="searchResults.html" class="shoppingCard">
+                <div class="card w-100">
+                  <div class="card-body">
+                    <div class="itemWrapper">
+                      <img
+                        src="http://rewardtrax.com/isiprogram/images/Final_Sale_150.png"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <h4>On Sale Now!</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 mb-3 col-sm-6 col-lg-4">
+              <a href="searchResults.html" class="shoppingCard">
+                <div class="card w-100">
+                  <div class="card-body">
+                    <div class="itemWrapper">
+                      <img
+                        src="http://rewardtrax.com/isiprogram/images/Final_Tools_150.png"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <h4>Tools & Hardware</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End of Container-->
+    </main>
+    <footer></footer>
+    <!-- Optional JavaScript-->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js"></script>
+    <!-- Backstretch Script for Large Image Backgrounds  -->
+    <script src="./js/jquery.backstretch.js"></script>
+    <script src="./js/responsive-backgrounds.js"></script>
+    <!-- Circle Gauge Script -->
+    <script src="./js/jquery.circliful.min.js"></script>
+    <script src="./js/goal-tracking.js"></script>
+    <!-- Basic Theme Scripts -->
+    <script src="./js/program-specific-scripts.js"></script>
+    <script src="./js/RewardTraxCustom.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#appleStoreMenuLabel").hover(
+          function () {
+            $("#appleStoreLogo").show();
+          },
+          function () {
+            $("#appleStoreLogo").hide();
+          }
+        );
+      });
+
+      $(document).ready(function () {
+        $("#apple1").hover(
+          function () {
+            $("#appleStoreLogo").show();
+          },
+          function () {
+            $("#appleStoreLogo").hide();
+          }
+        );
+      });
+
+      $(document).ready(function () {
+        $("#apple2").hover(
+          function () {
+            $("#appleStoreLogo").show();
+          },
+          function () {
+            $("#appleStoreLogo").hide();
+          }
+        );
+      });
+
+      $(document).ready(function () {
+        $("#apple3").hover(
+          function () {
+            $("#appleStoreLogo").show();
+          },
+          function () {
+            $("#appleStoreLogo").hide();
+          }
+        );
+      });
+
+      $(document).ready(function () {
+        $("#apple4").hover(
+          function () {
+            $("#appleStoreLogo").show();
+          },
+          function () {
+            $("#appleStoreLogo").hide();
+          }
+        );
+      });
+
+      $(document).ready(function () {
+        $("#apple5").hover(
+          function () {
+            $("#appleStoreLogo").show();
+          },
+          function () {
+            $("#appleStoreLogo").hide();
+          }
+        );
+      });
+
+      $(document).ready(function () {
+        $("#apple6").hover(
+          function () {
+            $("#appleStoreLogo").show();
+          },
+          function () {
+            $("#appleStoreLogo").hide();
+          }
+        );
+      });
+
+      $(document).ready(function () {
+        $("#electronicsMenuLabel").hover(
+          function () {
+            $("#electronicsLogo").show();
+          },
+          function () {
+            $("#electronicsLogo").hide();
+          }
+        );
+      });
+      $(document).ready(function () {
+        $("#jewelryMenuLabel").hover(
+          function () {
+            $("#jewelryLogo").show();
+          },
+          function () {
+            $("#jewelryLogo").hide();
+          }
+        );
+      });
+      $(document).ready(function () {
+        $("#homeGardenMenuLabel").hover(
+          function () {
+            $("#homeGardenLogo").show();
+          },
+          function () {
+            $("#homeGardenLogo").hide();
+          }
+        );
+      });
+      $(document).ready(function () {
+        $("#onSaleNowMenuLabel").hover(
+          function () {
+            $("#onSaleNowLogo").show();
+          },
+          function () {
+            $("#onSaleNowLogo").hide();
+          }
+        );
+      });
+      $(document).ready(function () {
+        $("#moviesMenuLabel").hover(
+          function () {
+            $("#moviesLogo").show();
+          },
+          function () {
+            $("#moviesLogo").hide();
+          }
+        );
+      });
+
+      $(document).ready(function () {
+        $("#shoppingMenuLabel").hover(
+          function () {
+            $("#shoppingLogo").show();
+          },
+          function () {
+            $("#shoppingLogo").hide();
+          }
+        );
+      });
+
+      $(document).ready(function () {
+        $("#musicMenuLabel").hover(
+          function () {
+            $("#musicLogo").show();
+          },
+          function () {
+            $("#musicLogo").hide();
+          }
+        );
+      });
+
+      $(document).ready(function () {
+        $("#babyMenuLabel").hover(
+          function () {
+            $("#babyLogo").show();
+          },
+          function () {
+            $("#babyLogo").hide();
+          }
+        );
+      });
+
+      $(document).ready(function () {
+        $("#baby1").hover(
+          function () {
+            $("#babyLogo").show();
+          },
+          function () {
+            $("#babyLogo").hide();
+          }
+        );
+      });
+
+      $(document).ready(function () {
+        $("#baby2").hover(
+          function () {
+            $("#babyLogo").show();
+          },
+          function () {
+            $("#babyLogo").hide();
+          }
+        );
+      });
+
+      $(document).ready(function () {
+        $("#baby3").hover(
+          function () {
+            $("#babyLogo").show();
+          },
+          function () {
+            $("#babyLogo").hide();
+          }
+        );
+      });
+
+      $(document).ready(function () {
+        $("#baby4").hover(
+          function () {
+            $("#babyLogo").show();
+          },
+          function () {
+            $("#babyLogo").hide();
+          }
+        );
+      });
+
+      $(document).ready(function () {
+        $("#baby5").hover(
+          function () {
+            $("#babyLogo").show();
+          },
+          function () {
+            $("#babyLogo").hide();
+          }
+        );
+      });
+
+      $(document).ready(function () {
+        $("#baby6").hover(
+          function () {
+            $("#babyLogo").show();
+          },
+          function () {
+            $("#babyLogo").hide();
+          }
+        );
+      });
+
+      $(document).ready(function () {
+        $("#baby7").hover(
+          function () {
+            $("#babyLogo").show();
+          },
+          function () {
+            $("#babyLogo").hide();
+          }
+        );
+      });
+
+      $(document).ready(function () {
+        $("#booksMenuLabel").hover(
+          function () {
+            $("#booksLogo").show();
+          },
+          function () {
+            $("#booksLogo").hide();
+          }
+        );
+      });
+
+      $(document).ready(function () {
+        $("#books11").hover(
+          function () {
+            $("#booksLogo").show();
+          },
+          function () {
+            $("#booksLogo").hide();
+          }
+        );
+      });
+
+      $(document).ready(function () {
+        $("#books1").hover(
+          function () {
+            $("#booksLogo").show();
+          },
+          function () {
+            $("#booksLogo").hide();
+          }
+        );
+      });
+
+      $(document).ready(function () {
+        $("#books2").hover(
+          function () {
+            $("#booksLogo").show();
+          },
+          function () {
+            $("#booksLogo").hide();
+          }
+        );
+      });
+
+      $(document).ready(function () {
+        $("#books3").hover(
+          function () {
+            $("#booksLogo").show();
+          },
+          function () {
+            $("#booksLogo").hide();
+          }
+        );
+      });
+
+      $(document).ready(function () {
+        $("#books4").hover(
+          function () {
+            $("#booksLogo").show();
+          },
+          function () {
+            $("#booksLogo").hide();
+          }
+        );
+      });
+
+      $(document).ready(function () {
+        $("#books5").hover(
+          function () {
+            $("#booksLogo").show();
+          },
+          function () {
+            $("#booksLogo").hide();
+          }
+        );
+      });
+
+      $(document).ready(function () {
+        $("#books6").hover(
+          function () {
+            $("#booksLogo").show();
+          },
+          function () {
+            $("#booksLogo").hide();
+          }
+        );
+      });
+
+      $(document).ready(function () {
+        $("#books7").hover(
+          function () {
+            $("#booksLogo").show();
+          },
+          function () {
+            $("#booksLogo").hide();
+          }
+        );
+      });
+
+      $(document).ready(function () {
+        $("#books8").hover(
+          function () {
+            $("#booksLogo").show();
+          },
+          function () {
+            $("#booksLogo").hide();
+          }
+        );
+      });
+
+      $(document).ready(function () {
+        $("#books9").hover(
+          function () {
+            $("#booksLogo").show();
+          },
+          function () {
+            $("#booksLogo").hide();
+          }
+        );
+      });
+
+      $(document).ready(function () {
+        $("#books10").hover(
+          function () {
+            $("#booksLogo").show();
+          },
+          function () {
+            $("#booksLogo").hide();
+          }
+        );
+      });
+
+      $(document).ready(function () {
+        $("#giftBasketsMenuLabel").hover(
+          function () {
+            $("#giftbasketsLogo").show();
+          },
+          function () {
+            $("#giftbasketsLogo").hide();
+          }
+        );
+      });
+
+      $(document).ready(function () {
+        $("#fashionAccMenuLabel").hover(
+          function () {
+            $("#fashionLogo").show();
+          },
+          function () {
+            $("#fashionLogo").hide();
+          }
+        );
+      });
+
+      $(document).ready(function () {
+        $("#officeProductsMenuLabel").hover(
+          function () {
+            $("#officeLogo").show();
+          },
+          function () {
+            $("#officeLogo").hide();
+          }
+        );
+      });
+
+      $(document).ready(function () {
+        $("#catalogMenuLabel").hover(
+          function () {
+            $("#catalogLogo").show();
+          },
+          function () {
+            $("#catalogLogo").hide();
+          }
+        );
+      });
+
+      $(document).ready(function () {
+        $("#eventsMenuLabel").hover(
+          function () {
+            $("#eventsLogo").show();
+          },
+          function () {
+            $("#eventsLogo").hide();
+          }
+        );
+      });
+
+      $(document).ready(function () {
+        $("#travelMenuLabel").hover(
+          function () {
+            $("#travelLogo").show();
+          },
+          function () {
+            $("#travelLogo").hide();
+          }
+        );
+      });
+    </script>
+  </body>
+</html>

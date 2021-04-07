@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Events | RewardTrax - V5</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="container">
+        <div id="shoppingNavigation" class="row">
+          <div style="padding-left: 0;" class="col-xs-12 col-md-2">
+            <div class="dropdown w-100">
+              <button type="button" data-toggle="dropdown" class="dropbtn btn btn-primary dropdown-toggle">Departments</button>
+              <div class="dropdown-content">
+                <div class="row">
+                  <div class="col-xs-12 col-md-3">
+                    <div class="d-flex flex-column nav nav-tabs"><a data-toggle="tab" href="shopping.html">
+                        <div class="fa fa-home"></div>Home</a><a data-toggle="tab" href="#shopping">
+                        <div class="fa fa-tags"></div>Shopping</a><a data-toggle="tab" href="#events">
+                        <div class="fa fa-ticket"></div>Events</a><a data-toggle="tab" href="#travel">
+                        <div class="fa fa-plane"></div>Travel</a>
+                      <hr class="w-100"><a data-toggle="tab" href="#sale">
+                        <div class="fa fa-certificate"></div>On Sale!</a>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-3 tab-content">
+                    <div id="shopping" style="max-height: 200px; overflow: scroll;" class="tab-pane fade">
+                      <div class="nav nav-tabs d-flex flex-column">
+                        <div class="nav nav-tabs d-flex flex-column"><a href="#appleStore" data-toggle="tab">Apple Store<span class="badge fa fa-caret-right"></span></a></div>
+                        <div class="nav nav-tabs d-flex flex-column"><a href="#baby" data-toggle="tab">Baby</a></div>
+                        <div class="nav nav-tabs d-flex flex-column"><a href="#books" data-toggle="tab">Books</a></div><a href="#">Electronics</a><a href="#">Fashion Accessories</a><a href="#">Gift Baskets</a><a href="#">Home & Garden</a><a href="#">Jewelry</a><a href="#">Movies</a><a href="#">Music</a><a href="#">Office Products</a><a href="#">On Sale Now!</a>
+                      </div>
+                    </div>
+                    <div id="events" class="d-flex flex-column tab-pane fade"><a href="#">Link 1</a><a href="#">Link 2</a><a href="#">Link 3</a></div>
+                    <div id="travel" class="d-flex flex-column tab-pane fade"><a href="#">Link A</a><a href="#">Link B</a><a href="#">Link C</a></div>
+                  </div>
+                  <div class="col-xs-12 col-md-3 tab-content">
+                    <div id="appleStore" class="tab-pane fade">
+                      <div class="d-flex flex-column"><a href="#">iPods</a><a href="#">iPod Accessories</a><a href="#">Watches</a><a href="#">Mac Systems</a><a href="#">iPads</a><a href="#">Shop All Apple Store</a></div>
+                    </div>
+                    <div id="baby" class="tab-pane fade">
+                      <div class="d-flex flex-column"><a href="#">Clothing</a><a href="#">Feeding</a><a href="#">Gear</a><a href="#">Maternity</a><a href="#">Nursery</a><a href="#">Care & Safety</a><a href="#">Shop All Baby</a></div>
+                    </div>
+                    <div id="books" class="tab-pane fade">
+                      <div class="d-flex flex-column"><a href="#">Autobiography & Biography</a><a href="#">Cooking</a><a href="#">Health & Fitness</a><a href="#">History</a><a href="#">Humor</a><a href="#">Juvenile NonFiction</a><a href="#">Juvenile Fiction</a><a href="#">Religion</a><a href="#">Social Science</a><a href="#">Sports & Recreation</a><a href="#">Shop All Books</a></div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-3 hideOnPhone">
+                    <div class="d-flex justify-content-end align-content-end">
+                      <div class="repImageWrapper"><img src="http://appsimulator.net/img/apple-watch-and-iphone-6.png"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-10">
+            <div class="input-group w-100 mb-3">
+              <div class="input-group-prepend"><span class="departmentSelect"><a href="#" class="btn btn-primary">All<span class="fa fa-caret-down"></span></a></span></div>
+              <input type="text" aria-label="Amount (to the nearest dollar)" class="form-control">
+              <div class="input-group-append"><span><a href="#" class="btn btn-primary"><span class="fa fa-search"></span></a></span></div>
+            </div>
+          </div>
+        </div>
+        <div id="shopDepartmentButtons" class="row d-flex flex-row justify-content-between mb-5"><a href="shopping.html" class="btn btn-primary">Shopping<span class="fas fa-tags"></span></a><a href="events.html" class="btn btn-primary">Events<span class="fas fa-ticket-alt"></span></a><a href="http://www.rewardtrax.com/brandeddemo15/Travel.aspx" target="_blank" class="btn btn-primary">Travel<span class="fas fa-plane"></span></a></div>
+        <div class="row">
+          <div id='search-utility' class="col-xs-12 col-md-3">
+            <h3>Search Events </h3>
+            <hr class="w-100 mt-0">
+            <form class="form-inline mb-2 my-lg-0 eventSearchForm">
+              <div class="input-group mb-3">
+                <input type="search" placeholder="Search" aria-label="Search" class="form-control mr-sm-2">
+                <button type="submit" class="btn btn-primary my-2 my-sm-0"><span class="fa fa-search"></span></button>
+              </div>
+              <select id="inputGroupSelect01" class="custom-select mb-3">
+                <option selected="">Any State...</option>
+                <option value="1">Alabama</option>
+                <option value="2">Alaska</option>
+                <option value="3">Alberta</option>
+                <option value="4">Arizona</option>
+                <option value="5">Etc...</option>
+              </select>
+              <div class="mb-3">
+                <div class="form-group row text-left">
+                  <div class="col-xs-12 col-md-3 text-left">
+                    <label for="From"> <span class="fa fa-calendar"> </span> From</label>
+                  </div>
+                  <div class="col-xs-12 col-md-8 offset-md-1">
+                    <input id="inputFromDate" type="email" class="form-control w-100">
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <div class="form-group row text-left">
+                  <div class="col-xs-12 col-md-3 text-left">
+                    <label for="To"> <span class="fa fa-calendar"> </span> To</label>
+                  </div>
+                  <div class="col-xs-12 col-md-8 offset-md-1">
+                    <input id="inputFromDate" type="email" class="form-control w-100">
+                  </div>
+                </div>
+              </div>
+
+
+              <select id="inputGroupSelect01" class="custom-select mb-5">
+                <option selected="">Any Category</option>
+                <option value="1">Sports</option>
+                <option value="2">Concerts</option>
+                <option value="3">Theater</option>
+                <option value="4">Other</option>
+              </select>
+              <h3>Event Categories</h3>
+              <hr class="w-100 mt-0">
+              <ul class="w-100 eventCategoryList">
+                <li> <a href="events_sports.html"><span class="fas fa-football-ball"></span>Sports</a></li>
+                <li> <a href="events_concert.html"><span class="fas fa-music"></span>Concerts</a></li>
+                <li> <a href="events_theater.html"><span class="fas fa-theater-masks"></span>Theater</a></li>
+                <li> <a href="events_other.html"><span class="fas fa-ticket-alt"></span>Other</a></li>
+              </ul>
+            </form>
+          </div>
+          <div class="col-xs-12 col-md-9">
+            <div class="d-flex justify-content-between align-items center">
+              <div class="venueVisualInfo">
+                <h2 class="eventVenueTitle">Minskoff Theatre </h2>
+                <p class="eventVenueLocation mb-0">200 West 45th Street </p>
+                <p class="eventVenueLocation">New York, New York 10036</p>
+                <div class="d-flex justify-content-start align-content-center venueActionLinks"> <a href="https://www.google.com/maps?q=200+West+45th+Street++New+York,+New+York+(Minskoff+Theatre)" target="_blank"><span class="fa fa-map-marker"> </span> Map</a><a href="https://broadwaydirect.com/theatre/minskoff-theatre/" target="_blank"><span class="fa fa-map-marker"> </span> Website</a><a id="viewVenueSeating" href="#"><span class="fa fa-eye"></span> View Venue Seating   </a></div>
+              </div>
+              <div class="backToEventsSearchResults"> <a href="events_searchResults.html"><span class="fa fa-arrow-circle-left"> </span> Go Back</a></div><img src="http://seatics.tickettransaction.com/MinskoffTheatre_Endstage-IntZone2_2017-12-06_2017-12-06_1055_SVGC_tn.gif" class="eventsVenue">
+            </div>
+            <div class="infoHeading">
+              <h3 class="mb-0">
+                <div class="fa fa-th-list"></div> Search Results
+              </h3>
+            </div>
+            <div class="infoWrapper">
+              <div class="row">
+                <div class="card w-100">
+                  <div class="table-responsive">
+                    <table class="table table-striped table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col">Row</th>
+                          <th scope="col">Section</th>
+                          <th scope="col">Notes</th>
+                          <th scope="col">Points</th>
+                          <th scope="col"> </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row"> </th>
+                          <td>
+                            <p class="eventSection">Zone E</p>
+                          </td>
+                          <td>
+                            <p>Mezzanine, Rows J-L. Tickets will be ready for delivery by June 15, 2018</p>
+                          </td>
+                          <td>
+                            <p class="eventRequiredPoints">41,854</p>
+                          </td>
+                          <td><a href="events_ticketPurchase.html" class="btn btn-primary">Order <span class="fa fa-arrow-circle-right"></span></a></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"> </th>
+                          <td>
+                            <p class="eventSection">Zone D</p>
+                          </td>
+                          <td>
+                            <p>Mezzanine, Rows F-H. Tickets will be ready for delivery by June 15, 2018</p>
+                          </td>
+                          <td>
+                            <p class="eventRequiredPoints">43,553</p>
+                          </td>
+                          <td><a href="events_ticketPurchase.html" class="btn btn-primary">Order <span class="fa fa-arrow-circle-right">     </span></a></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">L</th>
+                          <td>
+                            <p class="eventSection">Zone D</p>
+                          </td>
+                          <td>
+                            <p>Tickets will be ready for delivery by June 15, 2018</p>
+                          </td>
+                          <td>
+                            <p class="eventRequiredPoints">41,854</p>
+                          </td>
+                          <td><a href="events_ticketPurchase.html" class="btn btn-primary">Order <span class="fa fa-arrow-circle-right">       </span></a></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">AA</th>
+                          <td>
+                            <p class="eventSection">Zone D</p>
+                          </td>
+                          <td>
+                            <p>Mezzanine, Rows S-V. Tickets will be ready for delivery by June 15, 2018</p>
+                          </td>
+                          <td>
+                            <p class="eventRequiredPoints">40,854</p>
+                          </td>
+                          <td><a href="events_ticketPurchase.html" class="btn btn-primary">Order <span class="fa fa-arrow-circle-right">     </span></a></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">D</th>
+                          <td>
+                            <p class="eventSection">Zone D</p>
+                          </td>
+                          <td>
+                            <p>Tickets will be ready for delivery by June 15, 2018</p>
+                          </td>
+                          <td>
+                            <p class="eventRequiredPoints">41,854</p>
+                          </td>
+                          <td><a href="events_ticketPurchase.html" class="btn btn-primary">Order <span class="fa fa-arrow-circle-right">     </span></a></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"> </th>
+                          <td>
+                            <p class="eventSection">Zone E</p>
+                          </td>
+                          <td>
+                            <p>Mezzanine, Rows J-L. Tickets will be ready for delivery by June 15, 2018</p>
+                          </td>
+                          <td>
+                            <p class="eventRequiredPoints">41,854</p>
+                          </td>
+                          <td><a href="events_ticketPurchase.html" class="btn btn-primary">Order <span class="fa fa-arrow-circle-right"></span></a></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"> </th>
+                          <td>
+                            <p class="eventSection">Zone D</p>
+                          </td>
+                          <td>
+                            <p>Mezzanine, Rows F-H. Tickets will be ready for delivery by June 15, 2018</p>
+                          </td>
+                          <td>
+                            <p class="eventRequiredPoints">43,553</p>
+                          </td>
+                          <td><a href="events_ticketPurchase.html" class="btn btn-primary">Order <span class="fa fa-arrow-circle-right">     </span></a></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">L</th>
+                          <td>
+                            <p class="eventSection">Zone D</p>
+                          </td>
+                          <td>
+                            <p>Tickets will be ready for delivery by June 15, 2018</p>
+                          </td>
+                          <td>
+                            <p class="eventRequiredPoints">41,854</p>
+                          </td>
+                          <td><a href="events_ticketPurchase.html" class="btn btn-primary">Order <span class="fa fa-arrow-circle-right">       </span></a></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">AA</th>
+                          <td>
+                            <p class="eventSection">Zone D</p>
+                          </td>
+                          <td>
+                            <p>Mezzanine, Rows S-V. Tickets will be ready for delivery by June 15, 2018</p>
+                          </td>
+                          <td>
+                            <p class="eventRequiredPoints">40,854</p>
+                          </td>
+                          <td><a href="events_ticketPurchase.html" class="btn btn-primary">Order <span class="fa fa-arrow-circle-right">     </span></a></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">D</th>
+                          <td>
+                            <p class="eventSection">Zone D</p>
+                          </td>
+                          <td>
+                            <p>Tickets will be ready for delivery by June 15, 2018</p>
+                          </td>
+                          <td>
+                            <p class="eventRequiredPoints">41,854</p>
+                          </td>
+                          <td><a href="events_ticketPurchase.html" class="btn btn-primary">Order <span class="fa fa-arrow-circle-right">           </span></a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-md-6">
+                <div class="d-flex flex-row justify-content-start align-content-center">
+                  <nav aria-label="Page navigation example"></nav>
+                  <ul class="pagination">
+                    <li class="page-item"><a href="#" aria-label="Previous" class="page-link"><span aria-hidden="true">«</span><span class="sr-only">Previous</span></a></li>
+                    <li class="page-item"><a href="#" class="page-link">1</a></li>
+                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                    <li class="page-item"><a href="#" class="page-link">3</a></li>
+                    <li class="page-item"><a href="#" aria-label="Next" class="page-link"><span aria-hidden="true">»</span><span class="sr-only">Next</span></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-6">
+                <div class="d-flex flex-row justify-content-end align-content-center">
+                  <p>Entries Per Page</p>
+                  <form style="margin-left: 10px; margin-top:-5px;">
+                    <div class="form-group">
+                      <select class="custom-select form-control form-control-sm">
+                        <option>10</option>
+                        <option>50</option>
+                        <option>100</option>
+                      </select>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+	<!-- Optional JavaScript-->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+    <script src="./js/bootstrap.min.js"></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js'></script>
+    <!-- Backstretch Script for Large Image Backgrounds  -->
+    <script src='./js/jquery.backstretch.js'></script>
+    <script src='./js/responsive-backgrounds.js'></script>
+    <!-- Circle Gauge Script -->
+    <script src='./js/jquery.circliful.min.js'></script>
+    <script src='./js/goal-tracking.js'></script>
+    <!-- Basic Theme Scripts -->
+    <script src='./js/program-specific-scripts.js'></script>
+	<script src="./js/RewardTraxCustom.js">
+    </script>
+  </body>
+</html>

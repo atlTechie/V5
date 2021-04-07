@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>My Account | V5 Login</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-top">
+        <div class="container">
+            <div id="userInfo" class="navbar-brand">
+                <div class="fa fa-user-circle"></div> Hi Demo, you currently have <span class="headerPoints">64,500</span> points!
+            </div>
+            <button type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"></button><span></span>
+            <div id="navbarNav" class="collapse navbar-collapse"></div>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="myaccount.html" class="nav-link">My Account</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container"><a href="login.html" class="navbar-brand">NewV5</a>
+            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="fa fa-bars"></span></button>
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="welcome.html" class="nav-link">Welcome<span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item"><a href="profile.html" class="nav-link">Profile</a></li>
+                    <li class="nav-item"><a href="privacy.html" class="nav-link">QuickPoints</a></li>
+                    <li class="nav-item"><a href="learning.html" class="nav-link">Learning</a></li>
+                    <li class="nav-item"><a href="shopping.html" class="nav-link">Shopping</a></li>
+                    <li class="nav-item"><a href="performanceTracking.html" class="nav-link">Performance Tracking</a></li>
+                    <li class="nav-item"><a href="submitAsale.html" class="nav-link">Submit A Sale</a></li>
+                    <li class="nav-item"><a href="totalrecognitionsuite.html" class="nav-link">Total Recognition Suite</a></li>
+                    <li class="nav-item"><a href="leaderboard.html" class="nav-link">Leaderboard</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="col-xs-12 col-md-6 offset-md-3 text-center">
+                <div id="pageIntro" class="mb-5">
+                    <h2><span class="fa fa-bar-chart"></span> My Account</h2>
+                    <p>View your account stats at a glance, or dive further for more a more detailed breakdown of your program's activity.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="infoHeading">
+                <h3 class="mb-0">
+                    <div class="fa fa-university"></div> My Points
+                </h3>
+            </div>
+            <div class="infoWrapper">
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <div class="card w-100 h-100">
+                            <div class="card-title">
+                                <h3>
+                                    <div class="fa fa-certificate"></div> Awarded
+                                </h3>
+                            </div>
+                            <div class="card-body mx-auto">
+                                <h1>19,025</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="card w-100 h-100">
+                            <div class="card-title">
+                                <h3>
+                                    <div class="fa fa-money"></div> Redeemed
+                                </h3>
+                            </div>
+                            <div class="card-body mx-auto">
+                                <h1>6,354</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="card w-100 h-100">
+                            <div class="card-title">
+                                <h3>
+                                    <div class="fa fa-database"></div> Remaining
+                                </h3>
+                            </div>
+                            <div class="card-body mx-auto">
+                                <h1>12,671 </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="infoHeading">
+                <h3 class="mb-0">
+                    <div class="fa fa-bullhorn"></div> My Promotions
+                </h3>
+            </div>
+            <div class="infoWrapper">
+                <div class="d-flex flex-row justify-content-start align-content-center">
+                    <p>Show Promotions</p>
+                    <form style="margin-left: 10px; margin-top:-5px;">
+                        <div class="form-group">
+                            <select class="custom-select form-control form-control-sm">
+                  <option>Active</option>
+                  <option>Inactive</option>
+                </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="row">
+                    <div class="card w-100">
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Promotion Name </th>
+                                        <th scope="col">Approved</th>
+                                        <th scope="col">Pending </th>
+                                        <th scope="col">Needs Verification</th>
+                                        <th scope="col">Points Awarded </th>
+                                        <th scope="col">Detail </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Promotion ABC</th>
+                                        <td>5</td>
+                                        <td>5</td>
+                                        <td>1</td>
+                                        <td>1,000</td>
+                                        <td><a href="promotionDetail.html">View Entered Sales </a></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Promotion DEF</th>
+                                        <td>2</td>
+                                        <td>6</td>
+                                        <td>9</td>
+                                        <td>2,500</td>
+                                        <td><a href="promotionDetail.html">View Entered Sales  </a></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Promotion GHI</th>
+                                        <td>8</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>5,500</td>
+                                        <td><a href="promotionDetail.html">View Entered Sales       </a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="infoHeading">
+                <h3 class="mb-0">
+                    <div class="fa fa-history"></div> My Transaction History
+                </h3>
+            </div>
+            <div class="infoWrapper">
+                <div class="row">
+                    <div class="col-xs-12 col-md-3">
+                        <div class="d-flex flex-row">
+                            <p>From: </p>
+                            <form style="margin-left: 10px; margin-top:-5px;">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend"><span id="basic-addon1" class="input-group-text"> 
+                        <div class="fa fa-calendar"></div></span></div>
+                                    <input type="text" aria-label="Username" aria-describedby="basic-addon1" class="form-control form-control-sm">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="d-flex flex-row">
+                            <p>To: </p>
+                            <form style="margin-left: 10px; margin-top:-5px;">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend"><span id="basic-addon1" class="input-group-text"> 
+                        <div class="fa fa-calendar"></div></span></div>
+                                    <input type="text" aria-label="Username" aria-describedby="basic-addon1" class="form-control form-control-sm">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="d-flex flex-row">
+                            <p>Transaction Type:</p>
+                            <form style="margin-left: 10px; margin-top:-5px;">
+                                <div class="form-group">
+                                    <select class="custom-select form-control form-control-sm">
+                      <option>Active</option>
+                      <option>Inactive</option>
+                    </select>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="d-flex flex-row justify-content-end">
+                            <form style="margin-top:-5px;">
+                                <input type="text" placeholder="Search..." class="form-control form-control-sm">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card w-100">
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Type</th>
+                                        <th scope="col">Description</th>
+                                        <th scope="col">Amount</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">5/1/2017</th>
+                                        <td>Award</td>
+                                        <td>Promotion ABC Award</td>
+                                        <td>3,250</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5/20/2017</th>
+                                        <td>Order</td>
+                                        <td>
+                                            <div id="accordion">
+                                                <div id="headingOne">
+                                                    <h5 class="mb-0">
+                                                        <button data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="padding: 0px;" class="btn btn-link">Order ISI234234234</button>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion" class="collapse">
+                                                    <p>The Book of Eli - DVD</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>1,024</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5/25/2017</th>
+                                        <td>Award</td>
+                                        <td>Promotion DEF Award</td>
+                                        <td>2,467</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <div class="d-flex flex-row justify-content-start align-content-center">
+                        <nav aria-label="Page navigation example"></nav>
+                        <ul class="pagination">
+                            <li class="page-item"><a href="#" aria-label="Previous" class="page-link"><span aria-hidden="true">«</span><span class="sr-only">Previous</span></a></li>
+                            <li class="page-item"><a href="#" class="page-link">1</a></li>
+                            <li class="page-item"><a href="#" class="page-link">2</a></li>
+                            <li class="page-item"><a href="#" class="page-link">3</a></li>
+                            <li class="page-item"><a href="#" aria-label="Next" class="page-link"><span aria-hidden="true">»</span><span class="sr-only">Next</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <div class="d-flex flex-row justify-content-end align-content-center">
+                        <p>Record Count</p>
+                        <form style="margin-left: 10px; margin-top:-5px;">
+                            <div class="form-group">
+                                <select class="custom-select form-control form-control-sm">
+                    <option>10</option>
+                    <option>50</option>
+                    <option>100</option>
+                  </select>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="bottomNavigation">
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a href="faq.html" class="nav-link active">FAQ</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="rules.html" class="nav-link">Rules</a></li>
+                <li class="nav-item"><a href="terms.html" class="nav-link">Terms</a></li>
+                <li class="nav-item"><a href="privacy.html" class="nav-link">Privacy</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link">Logout</a></li>
+            </ul>
+        </div>
+        <div id="copyright">
+            <p>Copyright &copy; 2018 | RewardTrax - Reaching New Heights</p>
+        </div>
+    </footer>
+    <!-- Optional JavaScript-->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.backstretch.min.js"></script>
+    <script>
+        $('section#welcomeWrapper').backstretch("images/newHeightsBg.jpg");
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+main {
+  background: $main-bg;
+  min-height: calc(100vh - 286px);
+  @include color-contrast($main-bg);
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+main#loginPage,
+main#home {
+  min-height: 100vh;
+}
+
+main#loginPage {
+  // min-height: calc(100vh - 286px);
+  @include flex(column, center, center, $wrap: nowrap, $percent: 100%);
+  h1 {
+    font-family: $heading-font !important;
+  }
+  .loginBox {
+    margin: 50px auto 0 auto;
+    @include color-contrast($white);
+    background: $white;
+    @include base-padding();
+    @include box-shadow(10%);
+    p {
+      font-weight: bold;
+    }
+    a.btn-primary {
+      @if lightness($accent) > 65 {
+        color: $white;
+      } @else {
+        color: $text;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    min-height: 100vh;
+    padding: 50px 0;
+  }
+
+  @media (min-width: 768px) and (max-width: 992px) {
+    min-height: 100vh;
+    padding: 30px 0;
+  }
+}
+
+main#element-config {
+  section {
+    @include base-padding(125px, 125px, 0, 0);
+    &:nth-child(even) {
+      background: lighten($neutral, 40%);
+    }
+  }
+}
+
+main#four-o-four {
+  min-height: calc(100vh - 286px);
+  @include flex(column, center, center, $wrap: nowrap, $percent: 100%);
+  .four-o-four-content {
+    text-align: center;
+    @include color-contrast($main-bg);
+    max-width: 40%;
+    @media (max-width: 768px) {
+      max-width: 75%;
+    }
+    @media (min-width: 768px) and (max-width: 992px) {
+      max-width: 75%;
+    }
+  }
+}

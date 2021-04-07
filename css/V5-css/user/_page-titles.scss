@@ -1,0 +1,23 @@
+#page-titles{
+  background: $main-bg;
+  margin: 0 auto 75px auto;
+  text-align: center;
+  max-width: 50%;
+  @include color-contrast($main-bg);
+  h1{
+    font-family: $heading-font;
+    @if lightness($main-bg) > 50{
+      color: $primary;
+    }@else{
+      color: $white;
+    }
+    .fas, .fab, .far{
+      @if lightness($main-bg) > 50{
+        color: $secondary;
+      }@else{
+        color: $white;
+      }
+    }
+  }
+
+}
