@@ -1,6 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Permanent+Marker");
 /*-------COLOR VARIABLES-------*/
 /*--------PROGRAM FONTS--------*/
+.bg--primary {
+  background: #13262f;
+}
+
+.bg--primary--light-30 {
+  background: #224353;
+}
+
+.bg--secondary {
+  background: #779fa1;
+}
+
 button,
 .btn,
 .btn-primary,
@@ -1171,6 +1183,38 @@ body a, main a, section a {
 
 body a:hover, main a:hover, section a:hover, body a:focus, main a:focus, section a:focus {
   color: #1b260a !important;
+}
+
+.jumbotron-home-default {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0;
+  margin-bottom: 0;
+  padding: 6em 2em;
+}
+
+.token-3-col-padding {
+  padding: 3rem;
+}
+
+@media (min-width: 768px) {
+  .token-3-col-padding {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .jumbotron-home-default {
+    background-position: center -65vh;
+  }
+  #welcome-msg {
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
+  }
+  .token-3-col-padding {
+    padding: 6rem;
+  }
 }
 
 .quiz-list ::marker {

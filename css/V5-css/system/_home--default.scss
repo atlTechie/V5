@@ -1,0 +1,33 @@
+.jumbotron-home-default {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0;
+  margin-bottom: 0;
+  padding: 6em 2em;
+}
+
+.token-3-col-padding {
+  padding: 3rem;
+}
+
+@media (min-width: 768px) {
+  .token-3-col-padding {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .jumbotron-home-default {
+    background-position: center -65vh;
+  }
+
+  #welcome-msg {
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
+  }
+
+  .token-3-col-padding {
+    padding: 6rem;
+  }
+}

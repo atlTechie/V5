@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Permanent+Marker');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Permanent+Marker");
 
 /*-------COLOR VARIABLES-------*/
 $transparent: transparent;
@@ -11,6 +11,7 @@ $caution: yellow;
 $success: green;
 
 $primary: #13262f;
+$primary-light-30: lighten($primary, 10%);
 $secondary: #779fa1;
 $neutral: #c5c5c5;
 $accent: #618b25;
@@ -21,13 +22,22 @@ $icon: $secondary;
 // Color Default
 $main-bg: $white;
 
-
-
 /*--------PROGRAM FONTS--------*/
-$body-font: 'Open Sans', Arial, sans-serif;
-$heading-font: 'Permanent Marker', Georgia, serif;
+$body-font: "Open Sans", Arial, sans-serif;
+$heading-font: "Permanent Marker", Georgia, serif;
 
 $body-font-size: 16px;
 $body-line-height: 150%;
 $body-font-weight: 300;
 $body-font-family: $body-font;
+
+.bg--primary {
+  background: $primary;
+}
+
+.bg--primary--light-30 {
+  background: $primary-light-30;
+}
+.bg--secondary {
+  background: $secondary;
+}
