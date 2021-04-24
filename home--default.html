@@ -28,7 +28,7 @@
   </head>
   <body class="d-flex flex-column">
     <header></header>
-    <main class="h-100 d-flex flex-column bg-warning py-0">
+    <main class="h-100 d-flex flex-column py-0">
       <div class="jumbotron jumbotron-home-default text-white" style="background-image: url('https://www.rewardtrax.com/brandeddemo15/images/ChairsBG_darker-01.jpg');">
         <div class="container">
           <div class="row text-center mb-3">
@@ -71,40 +71,169 @@
                             <div class="col-4 text-center bg-white d-flex flex-column align-items-center justify-content-center ">
                                 <img class="psg_wishlist_widget_item_image" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6451/6451672fp.gif">
                             </div>
-                            <div class="col-8">
-                                <a class="psg_wishlist_widget_item_name" href="./shopping.html">MSI - GE66 Raider 15.6" Gaming Laptop - i7-10870H - 32GB Memory - NVIDIA GeForce RTX 3080 - 1TB SSD - Titanium Blue</a>
+                            <div class="col-8 wishlist-txt-content">
+                                <a class="psg_wishlist_widget_item_name mb-3" href="./shopping.html">MSI - GE66 Raider 15.6" Gaming Laptop - i7-10870H - 32GB Memory - NVIDIA GeForce RTX 3080 - 1TB SSD - Titanium Blue</a>
+                                <span data-i18n="widgetwishlist.general.points" class="font-weight-bold mr-1">Points:</span>
+                                <span class="psg_wishlist_widget_item_price_value">422,119</span>
                             </div>
                         </div>
-                        <div class="row psg_wishlist_widget_item_container mb-3">
-                            <div class="col-4  text-center bg-white d-flex flex-column align-items-center justify-content-center ">
+                        <div class="row psg_wishlist_widget_item_container mb-5">
+                            <div class="col-4 text-center bg-white d-flex flex-column align-items-center justify-content-center ">
                                 <img class="psg_wishlist_widget_item_image" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6451/6451672fp.gif">
                             </div>
-                            <div class="col-8 ">
-                                <a class="psg_wishlist_widget_item_name" href="./shopping.html">MSI - GE66 Raider 15.6" Gaming Laptop - i7-10870H - 32GB Memory - NVIDIA GeForce RTX 3080 - 1TB SSD - Titanium Blue</a>
+                            <div class="col-8 wishlist-txt-content">
+                                <a class="psg_wishlist_widget_item_name mb-3" href="./shopping.html">MSI - GE66 Raider 15.6" Gaming Laptop - i7-10870H - 32GB Memory - NVIDIA GeForce RTX 3080 - 1TB SSD - Titanium Blue</a>
+                                <span data-i18n="widgetwishlist.general.points" class="font-weight-bold mr-1">Points:</span>
+                                <span class="psg_wishlist_widget_item_price_value">422,119</span>
                             </div>
                         </div>
+                     
                     </div> 
                   </div>
-                  <div class="col-12 col-md-6 col-xl-4 bg--primary--light-30 token-3-col-padding">
+                  <div class="col-12 col-md-6 col-xl-4 bg--primary--light-30 token-3-col-padding text-center">
                     <h4 class="token-title text-center mb-3 mb-md-5">Goal Tracking</h4>
                       <!-- Token Code: Copy this div and its contents -->
-                      <div id="goal-tracking" class="svg-container"></div>
+                      <div class="goal_tracking_widget_container">
+
+                        <div class="row align-items-sm-center">
+                            <div class="col-12 col-sm-4 col-md-12 text-md-center">
+                                <div id="goal-tracking" class="svg-container"></div>
+                            </div>
+                            <div class="col-12 col-sm-8 col-md-12 text-sm-left text-md-center  goal-tracking-txt-content">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, atque.</p>
+                      <a href="./history.aspx" class="d-block">See More</a>
+                            </div>
+                        </div>
+                      </div>
+                      
+                      
                   </div>
                   <div class="col-12 col-xl-4 bg--primary token-3-col-padding">
                     <h4 class="token-title text-center mb-3 mb-md-5">Daily Trivia</h4>
                       <!-- Token Code: Copy this div and its contents -->
-                    <div id="_ctl1_dvWishList" class="psg_wishlist_widget_container ">
-                       
-                    </div> 
+                      <div class="row" id="quiz-questions-wrapper">
+                        <ol class="quiz-list">
+                          <li class="quiz-question mb-3">
+                            Who's the best team in college football?
+                            <ul class="quiz-list-answers-wrapper list-group mt-3">
+                              <li class="list-group-item mb-2 mr-2">
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="flexRadioDefault"
+                                    id="flexRadioDefault1"
+                                  />
+                                  <label class="form-check-label" for="flexRadioDefault1">
+                                    University of Georgia
+                                  </label>
+                                </div>
+                              </li>
+                              <li class="list-group-item mb-2 mr-2">
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="flexRadioDefault"
+                                    id="flexRadioDefault2"
+                                    checked
+                                  />
+                                  <label class="form-check-label" for="flexRadioDefault2">
+                                    University of Alabama
+                                  </label>
+                                </div>
+                              </li>
+                              <li class="list-group-item mb-2 mr-2">
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="flexRadioDefault"
+                                    id="flexRadioDefault3"
+                                    checked
+                                  />
+                                  <label class="form-check-label" for="flexRadioDefault3">
+                                    University of Tennessee
+                                  </label>
+                                </div>
+                              </li>
+                              <li class="list-group-item mb-2 mr-2">
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="flexRadioDefault"
+                                    id="flexRadioDefault4"
+                                    checked
+                                  />
+                                  <label class="form-check-label" for="flexRadioDefault4">
+                                    University of South Carolina
+                                  </label>
+                                </div>
+                              </li>
+                            </ul>
+                          </li>
+                         
+                        </ol>
+                      </div>
                   </div>
               </div>
          
       </section>
-      <div class="container">
-        <div class="row">
-          <div class="col-12"></div>
+
+      <section id="awards-adjustments-section" class="section text-center py-5">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-12 col-md-8 col-lg-6 mx-auto">
+                    <h2>My Awards</h2>
+                    <p class="mb-0">Review your awards and adjustments.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 history-widget-item mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6 col-md-2 mb-3 mb-md-0 text-left order-1">
+                                    <small class="d-block font-weight-bold text-uppercase">Date</small>
+                                    <span class="psg_award_widget_repeater_body_td_span">11/6/2020</span>
+                                </div>
+                                <div class="col-6 col-md-2 text-right order-2 order-md-3">
+                                    <small class="d-block font-weight-bold text-uppercase">Amount</small>
+                                    <span class="psg_award_widget_repeater_body_td_span">100,000</span>
+                                </div>
+                                <div class="col-12 col-md-8 order-3 order-md-2 text-left">
+                                    <small class="d-block font-weight-bold text-uppercase">Description</small>
+                                    <span class="psg_award_widget_repeater_body_td_span">Win Wheel Bonus - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, odio.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 history-widget-item mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6 col-md-2 mb-3 mb-md-0 text-left order-1">
+                                    <small class="d-block font-weight-bold text-uppercase">Date</small>
+                                    <span class="psg_award_widget_repeater_body_td_span">11/6/2020</span>
+                                </div>
+                                <div class="col-6 col-md-2 text-right order-2 order-md-3">
+                                    <small class="d-block font-weight-bold text-uppercase">Amount</small>
+                                    <span class="psg_award_widget_repeater_body_td_span">100,000</span>
+                                </div>
+                                <div class="col-12 col-md-8 order-3 order-md-2 text-left">
+                                    <small class="d-block font-weight-bold text-uppercase">Description</small>
+                                    <span class="psg_award_widget_repeater_body_td_span">Win Wheel Bonus - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, odio.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
+    
     </main>
     <footer></footer>
     <!-- Optional JavaScript-->
@@ -121,6 +250,14 @@
     <script src="./js/goal-tracking.js"></script>
     <!-- Basic Theme Scripts -->
     <script src="./js/program-specific-scripts.js"></script>
+    <script src="./js/clamp.min.js"></script>
+    <!-- <script>
+        var header = document.getElementsByTagName('body')[0].getElementsByTagName('a')[0],
+            paragraph = document.getElementsByTagName('body')[0].getElementsByTagName('div')[0];
+            
+        $clamp(header, {clamp: 1, useNativeClamp: false});
+        $clamp(paragraph, {clamp: 10, useNativeClamp: false, animate: true});
+    </script> -->
     <script src="./js/RewardTraxCustom.js"></script>
   </body>
 </html>
