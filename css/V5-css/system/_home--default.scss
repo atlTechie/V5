@@ -50,6 +50,7 @@
 @media (min-width: 768px) {
   svg.circliful {
     margin-top: -75px !important;
+    width: 255px;
   }
 }
 
@@ -71,11 +72,10 @@
     }
     ul.quiz-list-answers-wrapper {
       flex-direction: column;
-      li,
-      li.quiz-question {
-        flex: 1 1 100%;
-        width: 100% !important;
-      }
+    }
+    li.quiz-question {
+      flex: 1 1 100%;
+      width: 100% !important;
     }
   }
 }

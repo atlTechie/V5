@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Permanent+Marker");
 
 /*-------COLOR VARIABLES-------*/
+
 $transparent: transparent;
 
 $white: #fff;
@@ -10,14 +11,47 @@ $danger: red;
 $caution: yellow;
 $success: green;
 
-$primary: #13262f;
+$primary: #5b5f97;
 $primary-light-30: lighten($primary, 10%);
-$secondary: #779fa1;
-$neutral: #c5c5c5;
-$accent: #618b25;
+$neutral: #fff1d6;
+$secondary: $neutral;
+$accent: #ff6b6c;
 
-$text: darken($neutral, 25%);
+$text: #545454;
 $icon: $secondary;
+.bg-neutral {
+  background: $neutral;
+}
+
+$increments: 10, 20, 30, 40, 50;
+
+// Generate Palette Tints
+.bg-primary {
+  background: $primary !important;
+}
+
+@each $incr in $increments {
+  .bg-primary-light-#{$incr} {
+    background-color: lighten($primary, $incr);
+  }
+}
+// Generate Palette Shades
+@each $incr in $increments {
+  .bg-primary-dark-#{$incr} {
+    background-color: darken($primary, $incr);
+  }
+}
+
+// .bg--primary {
+//   background: $primary;
+// }
+
+// .bg--primary--light-30 {
+//   background: $primary-light-30;
+// }
+// .bg--secondary {
+//   background: $secondary;
+// }
 
 // Color Default
 $main-bg: $white;
@@ -30,14 +64,3 @@ $body-font-size: 16px;
 $body-line-height: 150%;
 $body-font-weight: 300;
 $body-font-family: $body-font;
-
-.bg--primary {
-  background: $primary;
-}
-
-.bg--primary--light-30 {
-  background: $primary-light-30;
-}
-.bg--secondary {
-  background: $secondary;
-}
