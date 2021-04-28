@@ -1,0 +1,16 @@
+main.login-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+form.login-form {
+  .form-group {
+    text-align: left;
+    .form-control {
+      input {
+        border: transparent;
+        width: 100%;
+      }
+    }
+  }
+}

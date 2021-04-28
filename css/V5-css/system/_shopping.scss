@@ -69,6 +69,12 @@
 }
 
 #shoppingNavigation {
+  a {
+    color: $primary;
+    &:hover {
+      color: $primary-dark-10;
+    }
+  }
   .fa-2x {
     font-size: 0.9rem;
   }
@@ -84,6 +90,7 @@
       h4 {
         text-align: center;
         font-size: 0.95rem;
+        color: $text;
       }
     }
   }
@@ -301,7 +308,7 @@
   .fa,
   .far,
   .fab {
-    color: $secondary;
+    color: $primary;
   }
   a.btn.btn-primary {
     .fas,
@@ -323,7 +330,7 @@
 }
 
 #topCategoriesButtons {
-  background: $accent;
+  background: $primary;
 }
 
 // Updated Shopping Navigation

@@ -1,11 +1,16 @@
-@mixin base-padding($amount-t: 30px, $amount-b: 30px, $amount-l: 30px, $amount-r: 30px){
+@mixin base-padding(
+  $amount-t: 30px,
+  $amount-b: 30px,
+  $amount-l: 30px,
+  $amount-r: 30px
+) {
   padding-top: $amount-t;
   padding-bottom: $amount-b;
   padding-left: $amount-l;
   padding-right: $amount-r;
 }
 
-@mixin flex($direction, $justify, $align, $wrap: nowrap, $percent: 100%){
+@mixin flex($direction, $justify, $align, $wrap: nowrap, $percent: 100%) {
   display: flex;
   flex-direction: $direction;
   justify-content: $justify;
@@ -16,71 +21,70 @@
 }
 
 // EFFECTS
-@mixin basic-hover($color){
-  &:hover{
+@mixin basic-hover($color) {
+  &:hover {
     background: darken($color, 25%);
   }
 }
 
-@mixin box-shadow($shadow-lightness: 5%){
+@mixin box-shadow($shadow-lightness: 5%) {
   box-shadow: 0 3px 6px lighten($neutral, $shadow-lightness);
 }
 
 // AVATAR
-@mixin avatar($size){
+@mixin avatar($size) {
   width: $size;
   height: $size;
   margin: 10px auto;
   display: inline-block;
   overflow: hidden;
   border-radius: 50%;
-  img{
+  img {
     width: 100%;
     min-height: 100%;
-    object-fit:cover;
+    object-fit: cover;
     object-position: center;
   }
-
 }
-
 
 // COLOR FUNCTIONS
-@mixin color-contrast($bg-color){
-@if lightness($bg-color) > 65{
-  color: $text;
-  a{
-    color: $accent;
-  }
-}@else{
-  color: $white;
-  a{
-    color: $white;
-    &:hover{
-      color: $white!important;
+@mixin color-contrast($bg-color) {
+  @if lightness($bg-color) > 65 {
+    color: $text;
+    a {
+      color: $accent;
     }
-  }
+  } @else {
+    color: $white;
+    a {
+      color: $white;
+      &:hover {
+        color: $white !important;
+      }
+    }
   }
 }
 
-
 // BUTTONS
-@mixin buttons($width, $style, $color){
-  @include basic-hover($accent);
-  background: $accent;
+@mixin buttons($width, $style, $color) {
+  @include basic-hover($primary);
+  background: $primary;
   text-transform: uppercase;
   font-weight: $body-font-weight;
-  border: $width $style $color!important;
+  border: $width $style $color !important;
   letter-spacing: 1px;
-  @if lightness($accent) > 65{
+  @if lightness($primary) > 65 {
     color: $text;
-  }@else{
-    color: $white!important;
+  } @else {
+    color: $white !important;
   }
-  .fas, .fab, .far{
+  .fas,
+  .fab,
+  .far {
     color: $white;
     margin-left: 10px;
   }
-  &:hover{
-    color: $white!important;
+  &:hover {
+    color: $white !important;
   }
 }

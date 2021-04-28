@@ -7,20 +7,24 @@
   padding: 6em 2em;
 }
 
-.token-3-col-padding {
-  color: $white;
+.token-3-col-padding,
+.token-2-col-padding {
   padding: 3rem;
   a {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    color: $primary;
   }
   svg.circliful {
     margin-top: -30px;
     .circle {
       stroke: $accent;
       stroke-linecap: round;
+      .timer {
+        color: $text;
+      }
     }
   }
 

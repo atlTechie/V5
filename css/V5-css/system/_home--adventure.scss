@@ -1,0 +1,9 @@
+.welcome-msg--adventure {
+  border-top: 10px solid $primary-dark-10;
+  border-bottom: 10px solid $primary-dark-10;
+}
+
+.leaderboard-img-wrapper {
+  @include avatar(200px);
+  border: 10px solid $primary-light-50;
+}

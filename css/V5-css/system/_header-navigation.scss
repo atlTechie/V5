@@ -1,56 +1,56 @@
-nav.navbar-top{
+nav.navbar-top {
   $header-bg: $white;
   background: $header-bg;
   @include color-contrast($header-bg);
-  #userInfo{
+  #userInfo {
     @include color-contrast($header-bg);
     font-size: $body-font-size;
-    button.nav-toggler{
-    display: none;
+    button.nav-toggler {
+      display: none;
     }
   }
-  .fas, .fab, .far{
+  .fas,
+  .fab,
+  .far {
     margin-right: 5px;
     @include color-contrast($header-bg);
   }
-  @media (max-width: 992px){
-    #userInfo{
+  @media (max-width: 992px) {
+    #userInfo {
       width: 100%;
       text-align: center;
       margin-right: 0;
     }
-    .navbar-top-navigation{
+    .navbar-top-navigation {
       flex-direction: row;
       margin: 0 auto;
-      li{
+      li {
         margin-right: 10px;
-        &:last-child{
+        &:last-child {
           margin-right: 0;
         }
       }
     }
-
   }
 }
 
-nav.mainNavigation, #bottomNavigation{
+nav.mainNavigation,
+#bottomNavigation {
   $header-bg: $primary;
   background: $header-bg;
   @include color-contrast($header-bg);
-  padding: 0 1rem;
-  .nav-item{
+
+  .nav-item {
     line-height: 50px;
-    transition: all .3s;
-    &:hover{
-      background: darken($header-bg, 15%);
+    transition: all 0.3s;
+    &:hover {
+      background: darken($header-bg, 50%);
     }
   }
-  @media (max-width: 992px){
-    padding: 0rem;
-    .nav-item{
+  @media (max-width: 992px) {
+    .nav-item {
       padding-left: 10px;
       line-height: 40px;
     }
   }
-
 }
