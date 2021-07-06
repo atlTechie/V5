@@ -37,8 +37,21 @@ $neutral-dark-30: darken($neutral, 30%);
 $neutral-dark-40: darken($neutral, 40%);
 $neutral-dark-50: darken($neutral, 50%);
 
-$secondary: #edbf85;
-$accent: $primary;
+
+$accent: #f9c784;
+$accent-light-10: lighten($accent, 10%);
+$accent-light-20: lighten($accent, 20%);
+$accent-light-30: lighten($accent, 30%);
+$accent-light-40: lighten($accent, 40%);
+$accent-light-50: lighten($accent, 50%);
+
+$accent-dark-10: darken($accent, 10%);
+$accent-dark-20: darken($accent, 20%);
+$accent-dark-30: darken($accent, 30%);
+$accent-dark-40: darken($accent, 40%);
+$accent-dark-50: darken($accent, 50%);
+
+// $accent: $primary;
 
 $text: #545454;
 $icon: $secondary;
